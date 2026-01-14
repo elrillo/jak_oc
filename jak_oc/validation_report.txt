@@ -1,9 +1,0 @@
---- Resumen Estadístico Pre-Migración ---
-1. Cantidad de Coautores únicos: 159
-2. Mociones con texto PDF válido: 33 de 255 registros en tabla textos_pdf.
-   (Mociones en tabla principal sin coincidencia en tabla PDF: 0)
-
-3. Nulos en columnas críticas:
-   - Mociones 'N° Boletín' nulos: 0
-   - Coautores 'Diputado' nulos: 0
-   - Coautores 'N° Boletín' nulos: 0
