@@ -1,0 +1,42 @@
+--- Top 10 Alianzas ---
+                     Diputado  Coautorias
+0         Felipe Ward Edwards         102
+1  Javier Hernández Hernández          82
+2      Patricio Melero Abaroa          76
+3   María José Hoffmann Opazo          64
+4  Claudia Nogueira Fernández          63
+5       Gustavo Hasbún Selume          60
+6         Celso Morales Muñoz          56
+7      Iván Norambuena Farías          55
+8     Ignacio Urrutia Bonilla          50
+9         Javier Macaya Danús          49
+
+--- Distribución por Partido ---
+                                     Partido  Cantidad
+0              Unión Demócrata Independiente      1610
+1                        Renovación Nacional        78
+2                        Partido Republicano        50
+3                Partido Demócrata Cristiano        46
+4                  Partido Por La Democracia        35
+5                              Independiente        25
+6                         Partido Socialista        24
+7                        Independiente (Ilb)         9
+8       Partido Acción Regionalista De Chile         6
+9                            Partido Radical         5
+10                         Partido Comunista         2
+11  Partido Regionalista Independiente (Pri)         2
+12      Federación Regionalista Verde Social         2
+13                       Izquierda Ciudadana         2
+14                        Independiente (Rn)         1
+
+--- Distribución por Sexo ---
+     Sexo  Cantidad
+0  Hombre      1565
+1   Mujer       332
+
+--- Transversalidad (Basado en bloques ideológicos) ---
+                           Tipo  Cantidad
+0     Misma Coalición (Derecha)      1740
+1                   Desconocido       192
+2  Oposición (Centro/Izquierda)       131
+3                 Independiente        26

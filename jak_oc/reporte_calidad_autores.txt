@@ -1,0 +1,174 @@
+REPORTE DE CONSISTENCIA DE AUTORES (EXCEL vs PDF)
+=================================================
+
+Total Boletines con PDF legible: 33
+Boletines con discrepancias detectadas: 33
+Tasa de consistencia (Boletines perfectos): 0.0%
+
+DETALLE DE DISCREPANCIAS:
+-------------------------
+Boletín: 2897-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 6
+  - Nombres: Gonzalo Uriarte Herrera (Dudoso), Ignacio Urrutia Bonilla (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Pablo Prieto Lorca (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 2903-11
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Eugenio Bauer Jouanne (Dudoso), Ignacio Urrutia Bonilla (Dudoso), Julio Dittborn Cordua (Dudoso), Marcelo Forni Lobos (Dudoso), Pablo Prieto Lorca (Dudoso), Patricio Melero Abaroa (Dudoso), Ramón Barros Montero (Dudoso), Sergio Correa de la Cerda (Dudoso)
+
+Boletín: 2953-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 10
+  - Nombres: Alejandro García-Huidobro Sanfuentes, Cristián Leay Morán (Dudoso), Eugenio Bauer Jouanne (Dudoso), Felipe Salaberry Soto (Dudoso), Gonzalo Ibáñez Santa María (Dudoso), Gonzalo Uriarte Herrera (Dudoso), José Antonio Kast Rist (Dudoso), Juan Masferrer Pellizzari (Dudoso), Ramón Barros Montero (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 2978-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Eugenio Bauer Jouanne (Dudoso), Felipe Salaberry Soto (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Ignacio Urrutia Bonilla (Dudoso), Iván Moreira Barros (Dudoso), Marcelo Forni Lobos (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 2997-16
+  - Autores en Excel: 8
+  - No encontrados en PDF: 5
+  - Nombres: Gonzalo Uriarte Herrera (Dudoso), Ignacio Urrutia Bonilla (Dudoso), Jaime Quintana Leal (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso)
+
+Boletín: 3007-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 10
+  - Nombres: Andrés Egaña Respaldiza (Dudoso), Cristián Leay Morán (Dudoso), Darío Paya Mira (Dudoso), Felipe Salaberry Soto (Dudoso), Ignacio Urrutia Bonilla (Dudoso), José Antonio Kast Rist (Dudoso), Pablo Longueira Montes (Dudoso), Patricio Walker Prieto (Dudoso), Rodrigo Álvarez Zenteno (Dudoso), Rosauro Martínez Labbé (Dudoso)
+
+Boletín: 3037-18
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Gonzalo Uriarte Herrera (Dudoso), José Antonio Kast Rist (Dudoso), Juan Masferrer Pellizzari (Dudoso), Marcelo Forni Lobos (Dudoso), Mario Escobar Urbina (Dudoso), Pablo Longueira Montes (Dudoso), Ramón Barros Montero (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3055-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Carlos Recondo Lavanderos (Dudoso), Cristián Leay Morán (Dudoso), Darío Paya Mira (Dudoso), Felipe Salaberry Soto (Dudoso), José Antonio Kast Rist (Dudoso), Julio Dittborn Cordua (Dudoso), Pablo Longueira Montes (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3064-06
+  - Autores en Excel: 10
+  - No encontrados en PDF: 5
+  - Nombres: Andrés Egaña Respaldiza (Dudoso), Iván Norambuena Farías (Dudoso), Jorge Ulloa Aguillón (Dudoso), Marcelo Forni Lobos (Dudoso), Pablo Longueira Montes (Dudoso)
+
+Boletín: 3068-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Cristián Leay Morán (Dudoso), Darío Paya Mira (Dudoso), Felipe Salaberry Soto (Dudoso), Iván Moreira Barros (Dudoso), José Antonio Kast Rist (Dudoso), Mario Escobar Urbina (Dudoso), Pablo Prieto Lorca (Dudoso)
+
+Boletín: 3069-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 6
+  - Nombres: Andrés Egaña Respaldiza (Dudoso), Cristián Leay Morán (Dudoso), Felipe Salaberry Soto (Dudoso), Jorge Burgos Varela (Dudoso), José Antonio Kast Rist (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3092-11
+  - Autores en Excel: 6
+  - No encontrados en PDF: 5
+  - Nombres: Carlos Recondo Lavanderos, Gonzalo Uriarte Herrera (Dudoso), Marcelo Forni Lobos (Dudoso), Mario Escobar Urbina (Dudoso), Pablo Longueira Montes (Dudoso)
+
+Boletín: 3140-14
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Antonio Leal Labrín (Dudoso), Carlos Ignacio Kuschel Silva (Dudoso), Enrique Accorsi Opazo (Dudoso), Isabel Allende Bussi (Dudoso), José Antonio Kast Rist (Dudoso), Manuel Rojas Molina (Dudoso), Patricio Cornejo Vidaurrázaga (Dudoso), Patricio Melero Abaroa (Dudoso)
+
+Boletín: 3144-07
+  - Autores en Excel: 9
+  - No encontrados en PDF: 8
+  - Nombres: Darío Molina Sanhueza (Dudoso), Gonzalo Ibáñez Santa María (Dudoso), Iván Norambuena Farías (Dudoso), Jorge Ulloa Aguillón (Dudoso), José Antonio Kast Rist (Dudoso), Marcela Cubillos Sigall (Dudoso), Marcelo Forni Lobos (Dudoso), Mario Varela Herrera (Dudoso)
+
+Boletín: 3157-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Darío Paya Mira (Dudoso), Eugenio Bauer Jouanne (Dudoso), Ignacio Urrutia Bonilla (Dudoso), Iván Moreira Barros (Dudoso), José Antonio Kast Rist (Dudoso), Juan Masferrer Pellizzari (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3192-15
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Alejandro García-Huidobro Sanfuentes, Claudio Alvarado Andrade (Dudoso), Darío Molina Sanhueza (Dudoso), Iván Moreira Barros (Dudoso), Iván Norambuena Farías (Dudoso), José Antonio Kast Rist (Dudoso), Pablo Prieto Lorca (Dudoso)
+
+Boletín: 3128-05
+  - Autores en Excel: 9
+  - No encontrados en PDF: 7
+  - Nombres: Darío Molina Sanhueza (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Iván Norambuena Farías (Dudoso), José Antonio Kast Rist (Dudoso), Julio Dittborn Cordua (Dudoso), Marcelo Forni Lobos (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3460-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Eugenio Bauer Jouanne (Dudoso), Ignacio Urrutia Bonilla (Dudoso), Jorge Ulloa Aguillón (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Mario Varela Herrera (Dudoso), Pablo Prieto Lorca (Dudoso), Ramón Barros Montero (Dudoso)
+
+Boletín: 3523-04
+  - Autores en Excel: 10
+  - No encontrados en PDF: 3
+  - Nombres: Carlos Recondo Lavanderos (Dudoso), Claudio Alvarado Andrade (Dudoso), Roberto Delmastro Naso (Dudoso)
+
+Boletín: 3537-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 5
+  - Nombres: Eugenio Bauer Jouanne (Dudoso), Manuel Rojas Molina (Dudoso), Mario Varela Herrera (Dudoso), Pablo Prieto Lorca (Dudoso), Sergio Correa de la Cerda (Dudoso)
+
+Boletín: 3539-07
+  - Autores en Excel: 10
+  - No encontrados en PDF: 5
+  - Nombres: Andrés Egaña Respaldiza (Dudoso), Manuel Rojas Molina (Dudoso), Mario Varela Herrera (Dudoso), Patricio Melero Abaroa (Dudoso), Ramón Barros Montero (Dudoso)
+
+Boletín: 3582-18
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Claudio Alvarado Andrade (Dudoso), Darío Paya Mira (Dudoso), Eugenio Bauer Jouanne (Dudoso), Felipe Salaberry Soto (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Marcelo Forni Lobos (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3640-11
+  - Autores en Excel: 10
+  - No encontrados en PDF: 4
+  - Nombres: Darío Molina Sanhueza (Dudoso), Enrique Accorsi Opazo (Dudoso), Felipe Salaberry Soto (Dudoso), Iván Moreira Barros (Dudoso)
+
+Boletín: 3641-11
+  - Autores en Excel: 9
+  - No encontrados en PDF: 7
+  - Nombres: Gonzalo Ibáñez Santa María (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Iván Norambuena Farías (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Pablo Prieto Lorca (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
+Boletín: 3661-07
+  - Autores en Excel: 6
+  - No encontrados en PDF: 5
+  - Nombres: Gonzalo Uriarte Herrera (Dudoso), Jorge Burgos Varela (Dudoso), José Antonio Kast Rist (Dudoso), Juan Bustos Ramírez (Dudoso), Marcelo Forni Lobos (Dudoso)
+
+Boletín: 3662-09
+  - Autores en Excel: 8
+  - No encontrados en PDF: 7
+  - Nombres: Cristián Leay Morán (Dudoso), Gonzalo Uriarte Herrera (Dudoso), José Antonio Kast Rist, Marcelo Forni Lobos (Dudoso), Mario Varela Herrera (Dudoso), Patricio Hales Dib (Dudoso), Zarko Luksic Sandoval (Dudoso)
+
+Boletín: 3698-15
+  - Autores en Excel: 7
+  - No encontrados en PDF: 7
+  - Nombres: Alejandro García-Huidobro Sanfuentes, Darío Molina Sanhueza (Dudoso), Eugenio Bauer Jouanne (Dudoso), Gonzalo Uriarte Herrera (Dudoso), José Antonio Kast Rist (Dudoso), Julio Dittborn Cordua (Dudoso), Marcelo Forni Lobos
+
+Boletín: 3719-04
+  - Autores en Excel: 7
+  - No encontrados en PDF: 3
+  - Nombres: Carlos Olivares Zepeda (Dudoso), Guillermo Ceroni Fuentes (Dudoso), Ignacio Urrutia Bonilla (Dudoso)
+
+Boletín: 3731-18
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Alberto Cardemil Herrera (Dudoso), Eugenio Bauer Jouanne (Dudoso), Iván Norambuena Farías (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Nicolás Monckeberg Díaz (Dudoso), Pablo Prieto Lorca (Dudoso), Sergio Correa de la Cerda (Dudoso)
+
+Boletín: 3732-18
+  - Autores en Excel: 9
+  - No encontrados en PDF: 7
+  - Nombres: Eugenio Bauer Jouanne (Dudoso), Iván Norambuena Farías (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Nicolás Monckeberg Díaz (Dudoso), Pablo Prieto Lorca (Dudoso), Sergio Correa de la Cerda (Dudoso)
+
+Boletín: 3821-04
+  - Autores en Excel: 10
+  - No encontrados en PDF: 7
+  - Nombres: Carlos Montes Cisternas (Dudoso), Carlos Olivares Zepeda (Dudoso), Germán Becker Alvear (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Marcelo Forni Lobos (Dudoso), Rodrigo González Torres (Dudoso), Rosauro Martínez Labbé (Dudoso)
+
+Boletín: 3823-15
+  - Autores en Excel: 10
+  - No encontrados en PDF: 8
+  - Nombres: Alejandro García-Huidobro Sanfuentes, Carlos Recondo Lavanderos (Dudoso), Eugenio Bauer Jouanne (Dudoso), José Antonio Kast Rist (Dudoso), Marcelo Forni Lobos (Dudoso), Ramón Barros Montero (Dudoso), Rodrigo Álvarez Zenteno (Dudoso), Sergio Correa de la Cerda (Dudoso)
+
+Boletín: 3827-04
+  - Autores en Excel: 10
+  - No encontrados en PDF: 4
+  - Nombres: Darío Paya Mira (Dudoso), Gonzalo Uriarte Herrera (Dudoso), Marcelo Forni Lobos (Dudoso), Rodrigo Álvarez Zenteno (Dudoso)
+
