@@ -64,17 +64,45 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Conexión a SQLite Local ---
-DB_PATH = "database/jak_observatorio.db"
+
+# --- Conexión a SQLite Local ---
+
+def conectar_db():
+    # Intentar varias rutas comunes en servidores
+    # __file__ gives us the path to the current script
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    posibles_rutas = [
+        'database/jak_observatorio.db', # Local dev, usually relative to cwd
+        'jak_oc/database/jak_observatorio.db', # Sometimes useful in simple deployments
+        os.path.join(base_dir, 'database', 'jak_observatorio.db'), # Absolute path based on script location
+        os.path.join(base_dir, '..', 'database', 'jak_observatorio.db'), # One level up?
+        # Absolute path fallback to what we know works locally
+        "d:/Antigravity/jak_oc/database/jak_observatorio.db" 
+    ]
+
+    for ruta in posibles_rutas:
+        if os.path.exists(ruta):
+            # st.write(f"DEBUG: Conectado a {ruta}") # Uncomment for debug
+            return sqlite3.connect(ruta)
+
+    # Si llega aquí, mostrar error con diagnóstico
+    st.error("No se encontró la base de datos.")
+    st.write("CWD:", os.getcwd())
+    st.write("Base Dir:", base_dir)
+    st.write("Directorios visibles:", os.listdir('.' if os.path.exists('.') else '/'))
+    if os.path.exists('database'):
+         st.write("Contenido database:", os.listdir('database'))
+    return None
+
 
 @st.cache_data
 def load_data():
-    if not os.path.exists(DB_PATH):
-        st.error(f"No se encontró la base de datos en {DB_PATH}. Ejecute enrich_sqlite.py primero.")
+    conn = conectar_db()
+    if conn is None:
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
         
     try:
-        conn = sqlite3.connect(DB_PATH)
-        
         # Cargar Mociones
         try:
             df_mociones = pd.read_sql("SELECT * FROM mociones", conn)
@@ -98,7 +126,7 @@ def load_data():
         conn.close()
         return df_mociones, df_coautores, df_diputados, df_ia
     except Exception as e:
-        st.error(f"Error conectando a la base de datos local: {e}")
+        st.error(f"Error leyendo la base de datos: {e}")
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
 
 df_mociones, df_coautores, df_diputados, df_ia = load_data()
