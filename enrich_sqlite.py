@@ -42,8 +42,16 @@ def enrich_sqlite():
             elif "nombre" in clean or "materia" in clean: rename_map[c] = "nombre_iniciativa"
             elif "fecha" in clean and "ingreso" in clean: rename_map[c] = "fecha_ingreso"
             elif "estado" in clean: rename_map[c] = "estado_del_proyecto_de_ley"
+            elif "comision" in clean: rename_map[c] = "comision_inicial"
         
         df_moc.rename(columns=rename_map, inplace=True)
+        
+        # --- NUEVO: Generar comision_inicial desde Etapa si no existe ---
+        if 'comision_inicial' not in df_moc.columns and 'Etapa' in df_moc.columns:
+            print("Generando columna comision_inicial desde Etapa...")
+            # Regex extraction similar to app logic
+            df_moc['comision_inicial'] = df_moc['Etapa'].astype(str).str.extract(r'(?i)Comisi[oó]n\s+de\s+([^/]+)', expand=False).str.strip()
+        
         # Save back replacing
         df_moc.to_sql("mociones", conn, if_exists="replace", index=False)
         print("Mociones actualizadas.")
