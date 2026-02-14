@@ -29,18 +29,19 @@ st.set_page_config(
 
 # --- Estilos CSS: Tema Serio / Dark Mode / Serif ---
 st.markdown("""
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
     /* Importar Fuentes Serif Premium */
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap');
     
     /* Variables de Color - Dark Mode Serio */
     :root {
-        --bg-color: #0a0a0a;
-        --card-bg: #141414;
-        --text-main: #e0e0e0;
-        --text-muted: #a0a0a0;
-        --accent: #c0392b; /* Rojo sobrio o Dorado */
-        --border-color: #333;
+        --bg-color: #0c0d0e;
+        --card-bg: transparent;
+        --text-main: #ffffff;
+        --text-muted: #b0b0b0;
+        --accent: #c0392b;
+        --border-color: rgba(255,255,255,0.1);
     }
 
     /* Reset y Base */
@@ -58,111 +59,141 @@ st.markdown("""
     h1, h2, h3, .header-title {
         font-family: 'Playfair Display', serif;
         color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
     
     /* HEADER PERSONALIZADO */
     .hero-banner {
-        padding: 40px 20px;
-        background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);
-        border-bottom: 3px solid var(--border-color);
+        padding: 60px 20px;
+        background: transparent;
         text-align: center;
         margin-bottom: 20px;
     }
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
         color: white;
+        text-shadow: 0px 4px 10px rgba(0,0,0,0.8);
     }
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: var(--text-muted);
         font-style: italic;
         font-family: 'Playfair Display', serif;
-    }
-    .hero-img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #555;
-        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
     }
 
-    /* COMPONENTES */
+    /* COMPONENTES TIPO IMAGEN (Abiertos) */
     .metric-card {
-        background-color: var(--card-bg);
-        border: 1px solid var(--border-color);
-        padding: 20px;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
         text-align: center;
-        margin-bottom: 10px;
-    }
-    .metric-value {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.2rem;
-        color: white;
-        font-weight: 700;
+        margin-bottom: 20px;
     }
     .metric-label {
         font-family: 'Merriweather', serif;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
         color: var(--text-muted);
-        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .metric-value {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        color: white;
+        font-weight: 700;
+        line-height: 1;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .metric-subtitle {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        margin-top: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
-    /* Tabs Styling - Horizontal Menu overwrite */
+    /* Tabs Styling - Icon above text aesthetic */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 2px;
-        background-color: #111;
-        padding: 5px;
-        border-bottom: 1px solid #333;
+        gap: 40px;
+        background-color: transparent;
+        padding: 40px 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        justify-content: center;
     }
     .stTabs [data-baseweb="tab"] {
         height: auto;
-        padding: 10px 20px;
+        padding: 10px 15px;
         background-color: transparent;
-        color: #888;
+        color: rgba(255,255,255,0.3);
         font-family: 'Playfair Display', serif;
         font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         border: none;
         border-bottom: 2px solid transparent;
-        border-radius: 0;
-    }
-    .stTabs [aria-selected="true"] {
-        background-color: #1a1a1a !important;
-        color: white !important;
-        border-bottom: 2px solid #fff !important;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
-    /* Footer */
-    .footer {
-        margin-top: 50px;
-        padding: 30px;
-        border-top: 1px solid #333;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #666;
-        background-color: #050505;
+    /* FontAwesome Icons Implementation */
+    .stTabs [data-baseweb="tab"]::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        display: block;
+        transition: all 0.3s ease;
     }
-    .footer a {
-        color: #888;
-        text-decoration: none;
-        margin: 0 10px;
+    
+    /* Specific Icons for each Tab using robust nth-child selection */
+    /* We use raw strings in python or double escape in CSS to ensure \fXXXX is passed */
+    .stTabs [data-baseweb="tab"]:nth-child(1)::before { content: "\\f080"; } /* General */
+    .stTabs [data-baseweb="tab"]:nth-child(2)::before { content: "\\f073"; } /* Periodos */
+    .stTabs [data-baseweb="tab"]:nth-child(3)::before { content: "\\f005"; } /* Destacados */
+    .stTabs [data-baseweb="tab"]:nth-child(4)::before { content: "\\f66f"; } /* Comisiones */
+    .stTabs [data-baseweb="tab"]:nth-child(5)::before { content: "\\f0e8"; } /* Datos */
+    .stTabs [data-baseweb="tab"]:nth-child(6)::before { content: "\\f252"; } /* Estado */
+    .stTabs [data-baseweb="tab"]:nth-child(7)::before { content: "\\f70e"; } /* Leyes */
+    .stTabs [data-baseweb="tab"]:nth-child(8)::before { content: "\\f002"; } /* Explorador */
+
+    .stTabs [aria-selected="true"] {
+        background-color: transparent !important;
+        color: white !important;
+        border-bottom: 2px solid white !important;
     }
-    .footer a:hover {
+    .stTabs [aria-selected="true"]::before {
+        color: #c0392b; /* Highlight icon on selection */
+        transform: scale(1.1);
+    }
+    .stTabs [data-baseweb="tab"]:hover {
         color: white;
     }
-    
-    /* Ajustes generales de Streamlit Containers */
-    div[data-testid="stExpander"] {
-        background-color: var(--card-bg);
-        border: 1px solid #333;
+    .stTabs [data-baseweb="tab"]:hover::before {
+        transform: translateY(-3px);
     }
-    div[data-testid="stExpander"] p {
-        color: #ccc;
+    
+    /* Footer Clean */
+    .footer {
+        margin-top: 100px;
+        padding: 50px 20px;
+        background-color: transparent;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    /* Ajustes Graficos */
+    .js-plotly-plot .plotly .main-svg {
+        background: transparent !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -304,7 +335,15 @@ if not df_main.empty and not df_ia.empty:
     df_main = df_main.merge(df_ia, on='id_boletin', how='left')
 
 # --- HEADER FIJO (Visual) ---
-st.image("banner.png", use_container_width=True)
+st.markdown(f"""
+    <div class="hero-banner">
+        <div class="hero-subtitle">Observatorio Congreso</div>
+        <div class="hero-title">JOSE ANTONIO KAST</div>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:10px;">
+            <span style="background-color:rgba(255,255,255,0.1); padding:5px 15px; border-radius:20px; font-size:0.8rem; letter-spacing:1px; border:1px solid rgba(255,255,255,0.2);">DIPUTADO 2002-2018</span>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
 
 # --- NAVEGACIÓN HORIZONTAL (TABS) ---
 tabs_titles = [
@@ -327,9 +366,9 @@ def get_coauthors_for_boletines(boletin_list):
 def kpi_card(title, value, subtitle="", col=None):
     html = f"""
     <div class='metric-card'>
-        <div class='metric-value'>{value}</div>
         <div class='metric-label'>{title}</div>
-        <div style='font-size:0.8rem; color:#666; margin-top:5px'>{subtitle}</div>
+        <div class='metric-value'>{value}</div>
+        <div class='metric-subtitle'>{subtitle}</div>
     </div>
     """
     if col: col.markdown(html, unsafe_allow_html=True)
@@ -349,151 +388,204 @@ def format_date_human(val):
 # Dark Plotly Template
 pio_template = "plotly_dark"
 
+# helpers para lógica legislativa global
+def categorize_commission(c_name):
+    n = str(c_name).lower()
+    if 'constituc' in n or 'legislaci' in n or 'justicia' in n: return 'Constitución y Justicia'
+    if 'econom' in n or 'hacienda' in n or 'presupuesto' in n: return 'Economía y Hacienda'
+    if 'seguridad' in n or 'defensa' in n or 'inteligencia' in n: return 'Security y Defensa'
+    if 'familia' in n or 'mujer' in n or 'adulto mayor' in n or 'desarrollo' in n: return 'Familia y Social'
+    if 'educaci' in n or 'cultura' in n or 'deportes' in n: return 'Educación y Cultura'
+    if 'salud' in n: return 'Salud'
+    if 'trabajo' in n or 'previsión' in n: return 'Trabajo y Previsión'
+    if 'ambiente' in n or 'recursos' in n or 'pesca' in n or 'agricultura' in n or 'minería' in n: return 'Medio Ambiente y Recursos'
+    if 'vivienda' in n or 'obras' in n or 'transporte' in n or 'telecomunicaciones' in n: return 'Vivienda e Infraestructura'
+    if 'derechos humanos' in n or 'nacionalidad' in n: return 'DD.HH. y Nacionalidad'
+    if 'gobierno' in n or 'interior' in n or 'regional' in n: return 'Gobierno Interior'
+    return 'Otras'
+
+def map_stage_numeric(etapa_txt, estado_txt):
+    txt = str(etapa_txt).lower()
+    est = str(estado_txt).lower()
+    if "publicado" in est or "ley" in est or "tramitación terminada" in est: return 4
+    if "archivado" in est or "retirado" in est: return 0
+    if "tercer" in txt or "mixta" in txt or "veto" in txt: return 3
+    if "segundo" in txt or "revisora" in txt: return 2
+    return 1
+
+def map_stage_label(val):
+    if val == 4: return "Tramitación Terminada / Ley"
+    if val == 3: return "Tercer Trámite / Mixta"
+    if val == 2: return "Segundo Trámite"
+    if val == 1: return "Primer Trámite"
+    if val == 0: return "Archivado / Retirado"
+    return "Desconocido"
+
 # --- CONTENIDO ---
 
 # 1. GENERAL (Ex RESUMEN)
 with tabs[0]:
-    st.markdown("### Panorama General")
-    st.markdown("---")
+    st.markdown("<h2 style='text-align:center;'>Análisis de Trayectoria Legislativa</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#888; margin-bottom:40px;'>Un recorrido por la actividad y efectividad del diputado en el Congreso Nacional.</p>", unsafe_allow_html=True)
     
     total = len(df_main)
-    
-    # Leyes + Tramitación terminada (case insensitive)
-    # Buscamos 'Ley', 'Publicado' O 'Tramitación terminada'
     pattern_success = 'Ley|Publicado|Tramitación terminada'
     leyes_finished = len(df_main[df_main['estado_del_proyecto_de_ley'].str.contains(pattern_success, case=False, na=False)]) if 'estado_del_proyecto_de_ley' in df_main.columns else 0
-    
     co_auth_all = get_coauthors_for_boletines(df_main['id_boletin'].unique())
     co_auth_all = co_auth_all[co_auth_all['diputado'] != found_name]
     top_ally = co_auth_all['diputado'].mode()[0] if not co_auth_all.empty else "N/A"
-    
-    # Promedio Anual (Total / Cantidad de años distintos)
     unique_years = df_main['anio'].nunique() if 'anio' in df_main.columns else 1
     avg_yearly = round(total / unique_years, 1) if unique_years > 0 else 0
     
-    # KPIs Top (4 Columnas)
+    # KPIs Top
     c1, c2, c3, c4 = st.columns(4)
     kpi_card("Total Iniciativas", total, "Carrera parlamentaria", c1)
     kpi_card("Aprobados / Terminados", leyes_finished, f"Tasa: {(leyes_finished/total*100):.1f}%", c2)
     kpi_card("Promedio Anual", avg_yearly, "Mociones por año", c3)
     kpi_card("Aliado Histórico", top_ally, "Mayor colaborador", c4)
     
-    st.markdown("<br>", unsafe_allow_html=True)
-    
-    # Fila de Gráficos Superiores
-    g1, g2 = st.columns(2)
-    
-    with g1:
-        # Gráfico Torta: Estado de Proyectos
+    st.markdown("---")
+    # --- SECCIÓN 1: ESTADO (TEXTO IZQ, GRÁFICO DER) ---
+    col1_txt, col1_gr = st.columns([1, 1.5], gap="large")
+    with col1_txt:
+        st.markdown("### Estado de la Gestión")
+        st.markdown(f"""
+        Esta sección analiza el ciclo de vida de los **{total} proyectos** presentados. 
+        
+        Aproximadamente un **{(leyes_finished/total*100):.1f}%** de las iniciativas han logrado convertirse en ley o finalizar su tramitación, lo que representa un indicador clave de efectividad legislativa.
+        
+        La mayoría de los proyectos en el Congreso a menudo quedan estancados en comisiones, un desafío común en la labor parlamentaria chilena que se refleja en la alta proporción de mociones 'En Tramitación'.
+        """)
+    with col1_gr:
         if 'estado_del_proyecto_de_ley' in df_main.columns:
             status_counts = df_main['estado_del_proyecto_de_ley'].value_counts().reset_index()
             status_counts.columns = ['Estado', 'Cantidad']
-            # Agrupar estados minoritarios para limpieza si son muchos
-            if len(status_counts) > 10:
-                top_s = status_counts.head(9)
-                others = pd.DataFrame([['Otros', status_counts.iloc[9:]['Cantidad'].sum()]], columns=['Estado', 'Cantidad'])
+            if len(status_counts) > 8:
+                top_s = status_counts.head(7)
+                others = pd.DataFrame([['Otros', status_counts.iloc[7:]['Cantidad'].sum()]], columns=['Estado', 'Cantidad'])
                 status_counts = pd.concat([top_s, others])
             
-            fig_pie = px.pie(status_counts, values='Cantidad', names='Estado', hole=0.4, 
-                             title="Estado Actual de Proyectos", template=pio_template)
-            fig_pie.update_traces(textposition='inside', textinfo='percent+label')
+            fig_pie = px.pie(status_counts, values='Cantidad', names='Estado', hole=0.5, 
+                             template=pio_template, color_discrete_sequence=px.colors.sequential.RdBu)
+            fig_pie.update_layout(margin=dict(t=0, b=0, l=0, r=0), showlegend=True)
             st.plotly_chart(fig_pie, use_container_width=True)
-            
-    with g2:
-        # Gráfico Barras: Comisiones Iniciales
+
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    
+    # --- SECCIÓN 2: COMISIONES (GRÁFICO IZQ, TEXTO DER) ---
+    col2_gr, col2_txt = st.columns([1.5, 1], gap="large")
+    with col2_gr:
         if 'comision_inicial' in df_main.columns:
             com_init = df_main['comision_inicial'].fillna("Desconocida").value_counts().head(10).reset_index()
             com_init.columns = ['Comisión', 'Proyectos']
-            # Ordenar ascendente para gráfico horizontal
             com_init = com_init.sort_values('Proyectos', ascending=True)
             
             fig_bar_com = px.bar(com_init, x='Proyectos', y='Comisión', orientation='h',
-                                 title="Top 10 Comisiones de Origen", template=pio_template)
+                                 template=pio_template)
             fig_bar_com.update_traces(marker_color='#c0392b')
+            fig_bar_com.update_layout(margin=dict(t=0, b=0, l=0, r=0), xaxis_title="Cantidad de Proyectos")
             st.plotly_chart(fig_bar_com, use_container_width=True)
+            
+    with col2_txt:
+        st.markdown("### Áreas de Influencia")
+        st.markdown("""
+        El impacto legislativo se concentra principalmente en las áreas de **Constitución**, **Seguridad** y **Hacienda**. 
+        
+        Este gráfico destaca las 10 comisiones donde se ha ingresado el mayor volumen de iniciativas. Una mayor cantidad de proyectos en comisiones clave como Constitución sugiere un enfoque en temas de relevancia nacional y reformas estructurales.
+        """)
 
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    # Gráfico Inferior: Producción Anual
-    if 'anio' in df_main.columns:
-        yearly = df_main.groupby('anio').size().reset_index(name='Proyectos')
-        fig = px.bar(yearly, x='anio', y='Proyectos', title="Evolución de Producción Legislativa Anual", template=pio_template)
-        fig.update_traces(marker_color='#555')
-        st.plotly_chart(fig, use_container_width=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    
+    # --- SECCIÓN 3: PRODUCCIÓN ANUAL (TEXTO IZQ, GRÁFICO DER) ---
+    col3_txt, col3_gr = st.columns([1, 1.5], gap="large")
+    with col3_txt:
+        st.markdown("### Evolución Histórica")
+        st.markdown("""
+        La actividad parlamentaria no es lineal; fluctúa según los ciclos políticos y los periodos presidenciales. 
+        
+        Se observa una intensidad variable a lo largo de los años, con picos de actividad que suelen coincidir con debates nacionales críticos o el inicio de nuevos mandatos parlamentarios.
+        """)
+    with col3_gr:
+        if 'anio' in df_main.columns:
+            yearly = df_main.groupby('anio').size().reset_index(name='Proyectos')
+            fig_ev = px.bar(yearly, x='anio', y='Proyectos', template=pio_template)
+            fig_ev.update_traces(marker_color='#555')
+            fig_ev.update_layout(margin=dict(t=0, b=0, l=0, r=0), yaxis_title="Proyectos Ingresados")
+            st.plotly_chart(fig_ev, use_container_width=True)
 
 # 2. PERIODOS
 with tabs[1]:
-    st.markdown("### Desglose por Periodo Legislativo")
-    st.markdown("---")
+    st.markdown("<h2 style='text-align:center;'>Análisis por Periodo Legislativo</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#888; margin-bottom:40px;'>Explora el desempeño y foco temático en cada uno de los mandatos parlamentarios.</p>", unsafe_allow_html=True)
+    
     available_periods = sorted(df_main['periodo'].unique().tolist()) if 'periodo' in df_main.columns else []
     
     if available_periods:
-        selected_period = st.pills("Seleccione Periodo", available_periods, default=available_periods[0]) if hasattr(st, "pills") else st.selectbox("Seleccione Periodo", available_periods)
+        # Selector de Periodo destacado
+        selected_period = st.pills("Seleccionando periodo para desglose:", available_periods, default=available_periods[0]) if hasattr(st, "pills") else st.selectbox("Seleccione Periodo", available_periods)
         
         if selected_period:
             df_p = df_main[df_main['periodo'] == selected_period].copy()
-            st.write("") # Spacer
-            
             p_total = len(df_p)
             pattern_success = 'Ley|Publicado|Tramitación terminada'
             p_leyes = len(df_p[df_p['estado_del_proyecto_de_ley'].str.contains(pattern_success, case=False, na=False)]) if 'estado_del_proyecto_de_ley' in df_p.columns else 0
             
-            col_p1, col_p2 = st.columns(2)
-            kpi_card("Iniciativas del Periodo", p_total, selected_period, col_p1)
-            kpi_card("Leyes / Terminados", p_leyes, "Proyectos finalizados", col_p2)
+            c_p1, c_p2 = st.columns(2)
+            kpi_card("Iniciativas", p_total, selected_period, c_p1)
+            kpi_card("Convertidas en Ley", p_leyes, f"Mandato {selected_period}", c_p2)
             
             st.markdown("---")
             
-            # Gráficos del Periodo
-            c_g1, c_g2 = st.columns(2)
-            
-            with c_g1:
-                # 1. Estado de Proyectos en el Periodo
+            # SECCIÓN 1: ESTADO DEL PERIODO (TEXTO IZQ, GRÁFICO DER)
+            cp1_txt, cp1_gr = st.columns([1, 1.5], gap="large")
+            with cp1_txt:
+                st.markdown(f"### Desempeño en {selected_period}")
+                st.markdown(f"""
+                Durante este mandato, se presentaron **{p_total} iniciativas**. 
+                
+                Este análisis permite observar cómo se distribuyeron los resultados legislativos específicamente en estos años. La tasa de éxito de este periodo fue de un **{(p_leyes/p_total*100 if p_total > 0 else 0):.1f}%**.
+                """)
+            with cp1_gr:
                 if 'estado_del_proyecto_de_ley' in df_p.columns:
                     st_counts = df_p['estado_del_proyecto_de_ley'].value_counts().reset_index()
                     st_counts.columns = ['Estado', 'Cantidad']
-                    
-                    fig_st_per = px.pie(st_counts, values='Cantidad', names='Estado', hole=0.4,
-                                        title=f"Estado de Proyectos ({selected_period})", template=pio_template)
+                    fig_st_per = px.pie(st_counts, values='Cantidad', names='Estado', hole=0.5, template=pio_template)
+                    fig_st_per.update_layout(margin=dict(t=0, b=0, l=0, r=0))
                     st.plotly_chart(fig_st_per, use_container_width=True)
-            
-            with c_g2:
-                # 2. Temáticas en el Periodo (Usando lógica de Tab Comisiones)
-                if 'comision_inicial' in df_p.columns:
-                    # Copiar lógica de categorización (idealmente mover a función global, pero por ahora inline)
-                    def categorize_commission_local(c_name):
-                        n = str(c_name).lower()
-                        if 'constituc' in n or 'legislaci' in n or 'justicia' in n: return 'Constitución y Justicia'
-                        if 'econom' in n or 'hacienda' in n or 'presupuesto' in n: return 'Economía y Hacienda'
-                        if 'seguridad' in n or 'defensa' in n or 'inteligencia' in n: return 'Seguridad y Defensa'
-                        if 'familia' in n or 'mujer' in n or 'adulto mayor' in n or 'desarrollo' in n: return 'Familia y Social'
-                        if 'educaci' in n or 'cultura' in n or 'deportes' in n: return 'Educación y Cultura'
-                        if 'salud' in n: return 'Salud'
-                        if 'trabajo' in n or 'previsión' in n: return 'Trabajo y Previsión'
-                        if 'ambiente' in n or 'recursos' in n or 'pesca' in n or 'agricultura' in n or 'minería' in n: return 'Medio Ambiente y Recursos'
-                        if 'vivienda' in n or 'obras' in n or 'transporte' in n or 'telecomunicaciones' in n: return 'Vivienda e Infraestructura'
-                        if 'derechos humanos' in n or 'nacionalidad' in n: return 'DD.HH. y Nacionalidad'
-                        if 'gobierno' in n or 'interior' in n or 'regional' in n: return 'Gobierno Interior'
-                        return 'Otras'
 
-                    df_p['Tematica'] = df_p['comision_inicial'].apply(categorize_commission_local)
+            st.markdown("<br><br>", unsafe_allow_html=True)
+
+            # SECCIÓN 2: FOCO TEMÁTICO (GRÁFICO IZQ, TEXTO DER)
+            cp2_gr, cp2_txt = st.columns([1.5, 1], gap="large")
+            with cp2_gr:
+                if 'comision_inicial' in df_p.columns:
+                    df_p['Tematica'] = df_p['comision_inicial'].apply(categorize_commission)
                     p_temas = df_p['Tematica'].value_counts().reset_index()
                     p_temas.columns = ['Tematica', 'Proyectos']
-                    
-                    fig_tree_p = px.treemap(p_temas, path=['Tematica'], values='Proyectos', 
-                                            title=f"Foco Temático ({selected_period})", template=pio_template)
+                    fig_tree_p = px.treemap(p_temas, path=['Tematica'], values='Proyectos', template=pio_template)
+                    fig_tree_p.update_layout(margin=dict(t=0, b=0, l=0, r=0))
                     st.plotly_chart(fig_tree_p, use_container_width=True)
-            
-            # 3. Evolución Anual dentro del Periodo
-            if 'anio' in df_p.columns:
-                p_yearly = df_p.groupby('anio').size().reset_index(name='Proyectos')
-                fig_bar_p = px.bar(p_yearly, x='anio', y='Proyectos', title="Intensidad Legislativa Anual", template=pio_template)
-                fig_bar_p.update_traces(marker_color='#e74c3c')
-                st.plotly_chart(fig_bar_p, use_container_width=True)
-            
-            # 4. Tabla de Proyectos del Periodo
-            with st.expander(f"Ver todos los proyectos de {selected_period}"):
-                st.dataframe(df_p[['id_boletin', 'nombre_iniciativa', 'estado_del_proyecto_de_ley', 'fecha_ingreso', 'comision_inicial']].sort_values('fecha_ingreso', ascending=False), use_container_width=True)
+            with cp2_txt:
+                st.markdown("### Áreas de Interés")
+                st.markdown(f"En el periodo **{selected_period}**, la mayoría de los proyectos se concentraron en las categorías visualizadas a la izquierda. Esto revela las prioridades políticas y legislativas de este tiempo específico.")
+
+            st.markdown("<br><br>", unsafe_allow_html=True)
+
+            # SECCIÓN 3: INTENSIDAD (TEXTO IZQ, GRÁFICO DER)
+            cp3_txt, cp3_gr = st.columns([1, 1.5], gap="large")
+            with cp3_txt:
+                st.markdown("### Intensidad Anual")
+                st.markdown(f"Distribución año a año de las mociones ingresadas dentro del periodo legislativo {selected_period}.")
+            with cp3_gr:
+                if 'anio' in df_p.columns:
+                    p_yearly = df_p.groupby('anio').size().reset_index(name='Proyectos')
+                    fig_bar_p = px.bar(p_yearly, x='anio', y='Proyectos', template=pio_template)
+                    fig_bar_p.update_traces(marker_color='#c0392b')
+                    fig_bar_p.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+                    st.plotly_chart(fig_bar_p, use_container_width=True)
+
+            with st.expander(f"Auditar: Lista completa de proyectos ({selected_period})"):
+                st.dataframe(df_p[['id_boletin', 'nombre_iniciativa', 'estado_del_proyecto_de_ley', 'fecha_ingreso', 'comision_inicial']].sort_values('fecha_ingreso', ascending=False), use_container_width=True, hide_index=True)
 
 # 3. DESTACADOS
 with tabs[2]:
@@ -531,52 +623,31 @@ with tabs[2]:
 
 # 4. COMISIONES
 with tabs[3]:
-    st.markdown("### Trabajo en Comisiones")
-    st.caption("Agrupación temática basada en la Comisión de Origen.")
+    st.markdown("<h2 style='text-align:center;'>Trabajo en Comisiones</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#888; margin-bottom:40px;'>Análisis de la especialización temática basada en las comisiones de origen.</p>", unsafe_allow_html=True)
     
     if 'comision_inicial' in df_main.columns:
         df_com = df_main.copy()
         df_com['comision_inicial'] = df_com['comision_inicial'].fillna("Desconocida").astype(str)
-        df_com = df_com[df_com['comision_inicial'] != ""]
-        
-        # --- MAPPING TEMÁTICO ---
-        def categorize_commission(c_name):
-            n = c_name.lower()
-            if 'constituc' in n or 'legislaci' in n or 'justicia' in n: return 'Constitución y Justicia'
-            if 'econom' in n or 'hacienda' in n or 'presupuesto' in n: return 'Economía y Hacienda'
-            if 'seguridad' in n or 'defensa' in n or 'inteligencia' in n: return 'Seguridad y Defensa'
-            if 'familia' in n or 'mujer' in n or 'adulto mayor' in n or 'desarrollo' in n: return 'Familia y Social'
-            if 'educaci' in n or 'cultura' in n or 'deportes' in n: return 'Educación y Cultura'
-            if 'salud' in n: return 'Salud'
-            if 'trabajo' in n or 'previsión' in n: return 'Trabajo y Previsión'
-            if 'ambiente' in n or 'recursos' in n or 'pesca' in n or 'agricultura' in n or 'minería' in n: return 'Medio Ambiente y Recursos'
-            if 'vivienda' in n or 'obras' in n or 'transporte' in n or 'telecomunicaciones' in n: return 'Vivienda e Infraestructura'
-            if 'derechos humanos' in n or 'nacionalidad' in n: return 'DD.HH. y Nacionalidad'
-            if 'gobierno' in n or 'interior' in n or 'regional' in n: return 'Gobierno Interior'
-            return 'Otras Comisiones'
-
         df_com['Tematica'] = df_com['comision_inicial'].apply(categorize_commission)
         
-        # 1. VISUALIZACIÓN GENERAL (Treemap por Temática)
-        st.markdown("#### Distribución Temática General")
-        
-        theme_counts = df_com['Tematica'].value_counts().reset_index()
-        theme_counts.columns = ['Tematica', 'Proyectos']
-        
-        # Import numpy if needed
-        import numpy as np
-        
-        fig_tree = px.treemap(
-            theme_counts, 
-            path=['Tematica'], 
-            values='Proyectos', 
-            color='Proyectos',
-            color_continuous_scale='RdBu',
-            title="Mapa de Calor Temático",
-            template=pio_template
-        )
-        st.plotly_chart(fig_tree, use_container_width=True)
-        
+        # SECCIÓN 1: DISTRIBUCIÓN (TEXTO IZQ, TREEMAP DER)
+        cc1_txt, cc1_gr = st.columns([1, 1.5], gap="large")
+        with cc1_txt:
+            st.markdown("### Mapa de Especialización")
+            st.markdown("""
+            A través de las comisiones, podemos ver dónde se concentra el esfuerzo legislativo. 
+            
+            Este Mapa de Calor (Treemap) agrupa las comisiones específicas en temáticas generales para facilitar la comprensión de las prioridades del diputado.
+            """)
+        with cc1_gr:
+            import numpy as np
+            theme_counts = df_com['Tematica'].value_counts().reset_index()
+            theme_counts.columns = ['Tematica', 'Proyectos']
+            fig_tree = px.treemap(theme_counts, path=['Tematica'], values='Proyectos', color='Proyectos', color_continuous_scale='RdBu', template=pio_template)
+            fig_tree.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+            st.plotly_chart(fig_tree, use_container_width=True)
+
         st.markdown("---")
         
         # 2. SELECCIÓN DETALLADA
@@ -796,79 +867,54 @@ with tabs[4]:
 
 # 6. ESTADO Y TIEMPOS
 with tabs[5]:
-    st.markdown("### Ciclo de Vida Legislativo")
+    st.markdown("<h2 style='text-align:center;'>Ciclo de Vida Legislativo</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#888; margin-bottom:40px;'>Seguimiento del progreso de las iniciativas y tiempos de tramitación.</p>", unsafe_allow_html=True)
     
-    # --- MAPPING ETAPAS (Simplificado para Escala 1-4) ---
-    def map_stage_numeric(etapa_txt, estado_txt):
-        txt = str(etapa_txt).lower()
-        est = str(estado_txt).lower()
-        
-        # Escala 1 a 4 para visualización de progreso
-        if "publicado" in est or "ley" in est or "tramitación terminada" in est: return 4 # 100%
-        if "archivado" in est or "retirado" in est: return 0 # 0% o Estado especial
-        
-        if "tercer" in txt or "mixta" in txt or "veto" in txt: return 3 # 75%
-        if "segundo" in txt or "revisora" in txt: return 2 # 50%
-        
-        return 1 # 25% (Primer Trámite)
-
-    def map_stage_label(val):
-        if val == 4: return "Tramitación Terminada / Ley"
-        if val == 3: return "Tercer Trámite / Mixta"
-        if val == 2: return "Segundo Trámite"
-        if val == 1: return "Primer Trámite"
-        if val == 0: return "Archivado / Retirado"
-        return "Desconocido"
-
     if 'estado_del_proyecto_de_ley' in df_main.columns:
         df_status = df_main.copy()
-        # Columna auxiliar para texto de etapa (si existe, sino usa estado)
         source_col = 'etapa_del_proyecto' if 'etapa_del_proyecto' in df_main.columns else 'estado_del_proyecto_de_ley'
-        
         df_status['progress_val'] = df_status.apply(lambda x: map_stage_numeric(x.get(source_col, ''), x['estado_del_proyecto_de_ley']), axis=1)
         df_status['etapa_lbl'] = df_status['progress_val'].apply(map_stage_label)
         
-        # --- SECCION SUPERIOR: KPI vs GLOBAL DONUT ---
-        st.markdown("#### Panorama Global")
-        col_kpi, col_chart = st.columns([1, 2])
-        
-        with col_kpi:
-            # Calculo de Días Promedio (Solo Leyes)
+        # SECCIÓN 1: TIEMPOS (TEXTO IZQ, KPI DER)
+        ce1_txt, ce1_gr = st.columns([1, 1], gap="large")
+        with ce1_txt:
+            st.markdown("### Tramitación en Tiempo Real")
+            st.markdown("""
+            Uno de los mayores desafíos del proceso legislativo es la demora. 
+            
+            El KPI de la derecha muestra el promedio de días que han tardado las mociones de JAK en ser publicadas como ley, un dato clave sobre la agilidad del sistema.
+            """)
+        with ce1_gr:
             col_pub = 'publicado_en_diario_oficial'
             avg_days_val = "N/A"
             if col_pub in df_status.columns and 'fecha_ingreso' in df_status.columns:
                 df_l = df_status[df_status['estado_del_proyecto_de_ley'].str.contains('Ley|Publicado', case=False, na=False)].copy()
                 df_l[col_pub] = pd.to_datetime(df_l[col_pub], errors='coerce')
                 df_l['fecha_ingreso'] = pd.to_datetime(df_l['fecha_ingreso'], errors='coerce')
-                
                 df_l = df_l.dropna(subset=[col_pub, 'fecha_ingreso'])
                 if not df_l.empty:
                     df_l['dias'] = (df_l[col_pub] - df_l['fecha_ingreso']).dt.days
                     avg_days_val = int(df_l['dias'].mean())
-            
-            st.markdown(f"""
-            <div style="background-color: #1a1a1a; padding: 20px; border-radius: 10px; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                <h2 style="color: #ecf0f1; margin: 0;">Tiempo Promedio</h2>
-                <h1 style="color: #2ecc71; font-size: 3.5rem; margin: 10px 0;">{avg_days_val}</h1>
-                <p style="color: #95a5a6;">Días de tramitación<br>(Solo leyes publicadas)</p>
-            </div>
-            """, unsafe_allow_html=True)
-            
-        with col_chart:
-            # Gráfico de Anillo Global
+            kpi_card("Tiempo Promedio (Días)", avg_days_val, "Desde ingreso a publicación")
+
+        st.markdown("<br><br>", unsafe_allow_html=True)
+
+        # SECCIÓN 2: ETAPAS GLOBALES (GRÁFICO IZQ, TEXTO DER)
+        ce2_gr, ce2_txt = st.columns([1.5, 1], gap="large")
+        with ce2_gr:
             st_counts = df_status['etapa_lbl'].value_counts().reset_index()
             st_counts.columns = ['Etapa', 'Proyectos']
-            
-            # Orden personalizado para el gráfico
             order_map = {"Primer Trámite": 1, "Segundo Trámite": 2, "Tercer Trámite / Mixta": 3, "Tramitación Terminada / Ley": 4, "Archivado / Retirado": 5}
             st_counts['order'] = st_counts['Etapa'].map(order_map)
             st_counts = st_counts.sort_values('order')
-            
-            fig_global = px.pie(st_counts, values='Proyectos', names='Etapa', hole=0.6, 
-                                title="Distribución por Etapa Actual", template=pio_template,
-                                color_discrete_sequence=px.colors.sequential.RdBu)
+            fig_global = px.pie(st_counts, values='Proyectos', names='Etapa', hole=0.6, template=pio_template, color_discrete_sequence=px.colors.sequential.RdBu)
+            fig_global.update_layout(margin=dict(t=0, b=0, l=0, r=0))
             st.plotly_chart(fig_global, use_container_width=True)
-            
+        with ce2_txt:
+            st.markdown("### Avance Legislativo")
+            st.markdown("Este gráfico de dona muestra en qué fase se encuentran todos los proyectos. Ayuda a identificar cuántas mociones se encuentran en trámites avanzados frente a las que están en su etapa inicial.")
+
         st.markdown("---")
         
         # --- SECCION CENTRAL: TRACKER INDIVIDUAL ---
@@ -932,59 +978,46 @@ with tabs[5]:
 
 # 7. LEYES
 with tabs[6]:
-    st.markdown("### Leyes y Proyectos Terminados")
-    st.caption("Análisis de proyectos que finalizaron su tramitación exitosamente o están publicados.")
+    st.markdown("<h2 style='text-align:center;'>Leyes y Proyectos Terminados</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color:#888; margin-bottom:40px;'>Análisis de proyectos que finalizaron su tramitación exitosamente.</p>", unsafe_allow_html=True)
     
     if 'estado_del_proyecto_de_ley' in df_main.columns:
-        # Criterio amplio de éxito
         pattern_success = 'Ley|Publicado|Tramitación terminada'
         df_leyes = df_main[df_main['estado_del_proyecto_de_ley'].str.contains(pattern_success, case=False, na=False)].copy()
         
         if df_leyes.empty:
-            st.info("No se encontraron leyes o proyectos terminados bajo estos criterios.")
+            st.info("No se encontraron leyes o proyectos terminados.")
         else:
-            st.markdown(f"**Total Encontrado:** {len(df_leyes)} iniciativas.")
-            st.markdown("---")
-            
-            # --- FILA DE GRÁFICOS ---
-            l1, l2 = st.columns(2)
-            
-            with l1:
-                # 1. Leyes por Año
+            # SECCIÓN 1: PRODUCTIVIDAD (TEXTO IZQ, GRÁFICO DER)
+            cl1_txt, cl1_gr = st.columns([1, 1.5], gap="large")
+            with cl1_txt:
+                st.markdown("### Productividad Judicial")
+                st.markdown(f"Se han consolidado **{len(df_leyes)} leyes** a lo largo de los años. Este gráfico muestra en qué años se originaron los proyectos que finalmente tuvieron éxito.")
+            with cl1_gr:
                 if 'anio' in df_leyes.columns:
                     leyes_year = df_leyes.groupby('anio').size().reset_index(name='Cantidad')
-                    fig_ly = px.bar(leyes_year, x='anio', y='Cantidad', title="Leyes por Año de Ingreso", template=pio_template)
+                    fig_ly = px.bar(leyes_year, x='anio', y='Cantidad', template=pio_template)
                     fig_ly.update_traces(marker_color='#2ecc71')
+                    fig_ly.update_layout(margin=dict(t=0, b=0, l=0, r=0))
                     st.plotly_chart(fig_ly, use_container_width=True)
-                    
-            with l2:
-                # 2. Leyes por Comisión
+
+            st.markdown("<br><br>", unsafe_allow_html=True)
+
+            # SECCIÓN 2: LEYES POR COMISIÓN (GRÁFICO IZQ, TEXTO DER)
+            cl2_gr, cl2_txt = st.columns([1.5, 1], gap="large")
+            with cl2_gr:
                 if 'comision_inicial' in df_leyes.columns:
                     leyes_com = df_leyes['comision_inicial'].fillna("Desconocida").value_counts().head(10).reset_index()
                     leyes_com.columns = ['Comisión', 'Cantidad']
                     leyes_com = leyes_com.sort_values('Cantidad', ascending=True)
-                    
-                    fig_lc = px.bar(leyes_com, x='Cantidad', y='Comisión', orientation='h', 
-                                    title="Top Comisiones (Leyes Aprobadas)", template=pio_template)
+                    fig_lc = px.bar(leyes_com, x='Cantidad', y='Comisión', orientation='h', template=pio_template)
                     fig_lc.update_traces(marker_color='#f1c40f')
+                    fig_lc.update_layout(margin=dict(t=0, b=0, l=0, r=0))
                     st.plotly_chart(fig_lc, use_container_width=True)
-            
-            # 3. Aliados en Leyes (Coautores específicos de este subset)
-            st.markdown("#### Aliados Clave en Proyectos Exitosos")
-            leyes_ids = df_leyes['id_boletin'].unique()
-            co_leyes = get_coauthors_for_boletines(leyes_ids)
-            co_leyes = co_leyes[co_leyes['diputado'] != found_name]
-            
-            if not co_leyes.empty:
-                top_co_leyes = co_leyes['diputado'].value_counts().head(15).reset_index()
-                top_co_leyes.columns = ['Diputado', 'Proyectos Aprobados']
-                
-                fig_aliados = px.bar(top_co_leyes, x='Diputado', y='Proyectos Aprobados', 
-                                     title="Coautores más frecuentes en Leyes Aprobadas", template=pio_template)
-                st.plotly_chart(fig_aliados, use_container_width=True)
-            else:
-                st.info("No se encontraron datos de coautores para estas leyes.")
-                
+            with cl2_txt:
+                st.markdown("### Áreas de Éxito")
+                st.markdown("Las comisiones listadas a la derecha representan los nichos donde el trabajo legislativo ha sido más efectivo, logrando la aprobación final de las leyes.")
+
             st.markdown("---")
             st.markdown("#### Listado Detallado")
             
@@ -1060,6 +1093,6 @@ with tabs[7]:
     st.caption(f"Mostrando {len(df_disp)} proyectos.")
 
 st.markdown(
-    """<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><style>.footer-container{display:flex;flex-wrap:wrap;justify-content:space-between;padding:50px 30px;background-color:#0F0F0F;border-top:1px solid #333;color:#a0a0a0;font-family:'Inter',sans-serif;margin-top:80px}.footer-col{flex:1;min-width:280px;margin:15px}.footer-title{color:#ffffff;font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:20px;border-bottom:2px solid #C0392B;display:inline-block;padding-bottom:5px}/* GLOBAL FOOTER LINK RESET */.footer-container a{color:#a0a0a0 !important;text-decoration:none !important;transition:all 0.3s ease}.footer-container a:hover{color:#ffffff !important}.footer-link{display:block;margin-bottom:10px;font-size:0.95rem}.footer-link:hover{transform:translateX(5px)}.social-icons a{display:inline-flex !important;justify-content:center;align-items:center;width:40px;height:40px;background-color:#222;color:#fff !important;border-radius:50%;margin-right:10px;font-size:1.1rem}.social-icons a:hover{background-color:#C0392B !important;transform:translateY(-3px)}.btn-subscribe{display:inline-block !important;background-color:#fff !important;color:#000 !important;padding:10px 20px;border-radius:30px;font-weight:bold;font-size:0.9rem;margin-top:15px}.btn-subscribe:hover{background-color:#ddd !important}.copyright-text{font-size:0.85rem;color:#555;line-height:1.6;margin-top:15px}</style><div class="footer-container"><div class="footer-col"><div class="footer-title">Conecta</div><p style="font-size:0.95rem;margin-bottom:20px">Mantente informado con nuestros análisis exclusivos.</p><div class="social-icons"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><a href="mailto:contacto@observatoriocongreso.cl"><i class="fas fa-envelope"></i></a></div><div><a href="#" class="btn-subscribe">Suscribirse al Boletín</a></div></div><div class="footer-col"><div class="footer-title">Explora</div><a href="#" class="footer-link">Sobre Nosotros</a><a href="#" class="footer-link">Metodología de Datos</a><a href="#" class="footer-link">Términos de Uso</a><a href="#" class="footer-link">Política de Privacidad</a></div><div class="footer-col"><div class="footer-title">Observatorio Legislativo</div><p class="copyright-text">&copy; 2026 Reservados todos los derechos.<br><br>Plataforma de análisis ciudadano basada en datos públicos de la Biblioteca del Congreso Nacional de Chile.<br>Diseñado con rigor y transparencia.</p></div></div>""",
+    """<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><style>.footer-container{display:flex;flex-wrap:wrap;justify-content:space-between;padding:50px 30px;background-color:#0F0F0F;border-top:1px solid #333;color:#a0a0a0;font-family:'Inter',sans-serif;margin-top:80px}.footer-col{flex:1;min-width:280px;margin:15px}.footer-title{color:#ffffff;font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:20px;border-bottom:2px solid #C0392B;display:inline-block;padding-bottom:5px}/* GLOBAL FOOTER LINK RESET */.footer-container a{color:#a0a0a0 !important;text-decoration:none !important;transition:all 0.3s ease}.footer-container a:hover{color:#ffffff !important}.footer-link{display:block;margin-bottom:10px;font-size:0.95rem}.footer-link:hover{transform:translateX(5px)}.social-icons a{display:inline-flex !important;justify-content:center;align-items:center;width:40px;height:40px;background-color:#222;color:#fff !important;border-radius:50%;margin-right:10px;font-size:1.1rem}.social-icons a:hover{background-color:#C0392B !important;transform:translateY(-3px)}.btn-subscribe{display:inline-block !important;background-color:#fff !important;color:#000 !important;padding:10px 20px;border-radius:30px;font-weight:bold;font-size:0.9rem;margin-top:15px}.btn-subscribe:hover{background-color:#ddd !important}.copyright-text{font-size:0.85rem;color:#555;line-height:1.6;margin-top:15px}</style><div class="footer-container"><div class="footer-col"><div class="footer-title">Conecta</div><p style="font-size:0.95rem;margin-bottom:20px">Mantente informado con nuestros análisis exclusivos.</p><div class="social-icons"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><a href="mailto:contacto@observatoriocongreso.cl"><i class="fas fa-envelope"></i></a></div><div><a href="#" class="btn-subscribe">Suscribirse al Boletín</a></div></div><div class="footer-col"><div class="footer-title">Explora</div><a href="#" class="footer-link">Sobre Nosotros</a><a href="#" class="footer-link">Metodología de Datos</a><a href="#" class="footer-link">Términos de Uso</a><a href="#" class="footer-link">Política de Privacidad</a></div><div class="footer-col"><div class="footer-title">Observatorio Congreso</div><p class="copyright-text">&copy; 2026 Reservados todos los derechos.<br><br>Plataforma de análisis ciudadano basada en datos públicos de la Biblioteca del Congreso Nacional de Chile.<br>Diseñado con rigor y transparencia.</p></div></div>""",
     unsafe_allow_html=True
 )
