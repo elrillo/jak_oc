@@ -204,7 +204,7 @@ st.markdown("""
 import psycopg2
 
 # Supabase Credentials (Pooler)
-DB_URL = "postgresql://postgres.tbniuckpxxzphturwnaj:KgjE5iLuevSXBHWU@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
+DB_URL = os.getenv("DATABASE_URL")  # Set in .env — never hardcode credentials
 
 def conectar_db():
     try:
