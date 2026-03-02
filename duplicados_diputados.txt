@@ -1,0 +1,467 @@
+Nombres con espacios o comillas solucionables: 117
+
+Grupos de nombres similares que parecen ser la misma persona:
+
+--- Grupo: adriana munoz d'albora ---
+ - Adriana Muñoz D'Albora
+ - Adriana Muñoz D` Albora
+ - Adriana Muñoz Dalbora
+ - Adriana Muñoz D´Albora
+
+--- Grupo: alberto cardemil herrera ---
+ - Alberto Cardemil Herrera
+ - Alberto Cardemil Herrera 
+
+--- Grupo: aldo cornejo gonzalez ---
+ - Aldo Cornejo Gonzalez
+ - Aldo Cornejo González
+
+--- Grupo: alejandra sepulveda orbenes ---
+ - Alejandra Sepulveda Orbenes
+ - Alejandra Sepúlveda Orbenes
+
+--- Grupo: alejandro garcia-huidobro sanfuentes ---
+ - Alejandro Garcia-Huidobro Sanfuentes
+ - Alejandro Garcia-Huidobro Sanfuentes 
+ - Alejandro García-Huidobro Sanfuentes
+
+--- Grupo: alfonso de urresti longton ---
+ - Alfonso De Urresti Longton
+ - Alfonso de Urresti Longton
+
+--- Grupo: alfonso vargas lyng ---
+ - Alfonso Vargas Lyng
+ - Alfonso Vargas Lyng 
+
+--- Grupo: andres aylwin azocar ---
+ - Andres Aylwin Azocar
+ - Andrés Aylwin Azócar
+
+--- Grupo: andres egana respaldiza ---
+ - Andres Egaña Respaldiza
+ - Andrés Egaña Respaldiza
+
+--- Grupo: andres palma irarrazaval ---
+ - Andres Palma Irarrazaval
+ - Andrés Palma Irarrázaval
+
+--- Grupo: angel fantuzzi hernandez ---
+ - Angel Fantuzzi Hernandez
+ - Angel Fantuzzi Hernández
+
+--- Grupo: antonio leal labrin ---
+ - Antonio Leal Labrin
+ - Antonio Leal Labrin 
+
+--- Grupo: armando arancibia calderon ---
+ - Armando Arancibia Calderon
+ - Armando Arancibia Calderón
+
+--- Grupo: carlos caminondo saez ---
+ - Carlos Caminondo Saez
+ - Carlos Caminondo Saez 
+ - Carlos Caminondo Sáez
+
+--- Grupo: carlos dupre silva ---
+ - Carlos Dupre Silva
+ - Carlos Dupré Silva
+
+--- Grupo: carlos valcarce medina ---
+ - Carlos Valcarce Medina
+ - Carlos Valcarce Medina 
+
+--- Grupo: carlos vilches guzman ---
+ - Carlos Vilches Guzman 
+ - Carlos Vilches Guzmán
+
+--- Grupo: carolina toha morales ---
+ - Carolina Toha Morales
+ - Carolina Toha Morales 
+
+--- Grupo: claudia nogueira fernandez ---
+ - Claudia Nogueira Fernandez
+ - Claudia Nogueira Fernández
+
+--- Grupo: claudio rodriguez cataldo ---
+ - Claudio Rodriguez Cataldo
+ - Claudio Rodríguez Cataldo
+
+--- Grupo: cristian monckeberg bruner ---
+ - Cristian Monckeberg Bruner
+ - Cristián Monckeberg Bruner
+
+--- Grupo: cristina girardi lavin ---
+ - Cristina Girardi Lavin
+ - Cristina Girardi Lavín
+
+--- Grupo: dario paya mira ---
+ - Dario Paya Mira
+ - Dario Paya Mira 
+ - Darío Paya Mira
+
+--- Grupo: eduardo diaz del rio ---
+ - Eduardo Diaz Del Rio 
+ - Eduardo Díaz Del Río
+
+--- Grupo: eduardo saffirio suarez ---
+ - Eduardo Saffirio Suarez
+ - Eduardo Saffirio Suárez
+
+--- Grupo: eliana caraball martinez ---
+ - Eliana Caraball Martinez
+ - Eliana Caraball Martinez 
+ - Eliana Caraball Martínez
+
+--- Grupo: ernesto silva mendez ---
+ - Ernesto Silva Mendez
+ - Ernesto Silva Méndez
+
+--- Grupo: esteban valenzuela van treek ---
+ - Esteban Valenzuela Van Treek
+ - Esteban Valenzuela Van Treek 
+
+--- Grupo: eugenio munizaga rodriguez ---
+ - Eugenio Munizaga Rodriguez
+ - Eugenio Munizaga Rodríguez
+
+--- Grupo: evelyn matthei fornet ---
+ - Evelyn Matthei Fornet
+ - Evelyn Matthei Fornet 
+
+--- Grupo: felipe harboe bascunan ---
+ - Felipe Harboe Bascuñán
+ - Felipe Harboe Bascuñán 
+
+--- Grupo: felipe valenzuela herrera ---
+ - Felipe Valenzuela Herrera
+ - Felipe Valenzuela Herrera 
+
+--- Grupo: francisco bartolucci johnston ---
+ - Francisco Bartolucci Johnston
+ - Francisco Bartolucci Johnston 
+
+--- Grupo: frank sauerbaum munoz ---
+ - Frank Sauerbaum Muñoz
+ - Frank Sauerbaum Muñoz 
+
+--- Grupo: fuad chahin valenzuela ---
+ - Fuad Chahin Valenzuela
+ - Fuad Chahín Valenzuela
+
+--- Grupo: fulvio rossi ciocca ---
+ - Fulvio Rossi Ciocca
+ - Fulvio Rossi Ciocca 
+
+--- Grupo: gabriel silber romo ---
+ - Gabriel Silber Romo
+ - Gabriel Silber Romo 
+
+--- Grupo: gaspar rivas sanchez ---
+ - Gaspar Rivas Sanchez
+ - Gaspar Rivas Sanchez 
+ - Gaspar Rivas Sánchez
+
+--- Grupo: gaston von muhlenbrock zamora ---
+ - Gaston Von Muhlenbrock Zamora
+ - Gastón Von Muhlenbrock Zamora
+ - Gastón Von Mühlenbrock Zamora
+
+--- Grupo: german becker alvear ---
+ - German Becker Alvear
+ - Germán Becker Alvear
+
+--- Grupo: gonzalo ibanez santa maria ---
+ - Gonzalo Ibañez Santa Maria
+ - Gonzalo Ibañez Santa Maria 
+
+--- Grupo: guillermo teillier del valle ---
+ - Guillermo Teillier Del Valle
+ - Guillermo Teillier del Valle
+
+--- Grupo: gutenberg martinez ocamica ---
+ - Gutenberg Martinez Ocamica
+ - Gutenberg Martinez Ocamica 
+ - Gutenberg Martínez Ocamica
+
+--- Grupo: isabel allende bussi ---
+ - Isabel Allende Bussi
+ - Isabel Allende Bussi 
+
+--- Grupo: isidoro toha gonzalez ---
+ - Isidoro Toha Gonzalez
+ - Isidoro Tohá González
+
+--- Grupo: issa kort garriga ---
+ - Issa Kort Garriga
+ - Issa Kort Garriga 
+
+--- Grupo: ivan flores garcia ---
+ - Iván Flores Garcia
+ - Iván Flores García
+
+--- Grupo: ivan moreira barros ---
+ - Ivan Moreira Barros
+ - Iván Moreira Barros
+
+--- Grupo: ivan norambuena farias ---
+ - Ivan Norambuena Farias
+ - Iván Norambuena Farias
+ - Iván Norambuena Farías
+
+--- Grupo: ivan paredes fierro ---
+ - Ivan Paredes Fierro 
+ - Iván Paredes Fierro
+
+--- Grupo: jaime mulet martinez ---
+ - Jaime Mulet Martinez
+ - Jaime Mulet Martínez
+
+--- Grupo: jaime naranjo ortiz ---
+ - Jaime Naranjo Ortiz
+ - Jaime Naranjo Ortiz 
+
+--- Grupo: javier hernandez hernandez ---
+ - Javier Hernandez Hernandez 
+ - Javier Hernández Hernandez
+ - Javier Hernández Hernández
+
+--- Grupo: javier macaya danus ---
+ - Javier Macaya Danus
+ - Javier Macaya Danús
+
+--- Grupo: jenny alvarez vera ---
+ - Jenny Alvarez Vera
+ - Jenny Álvarez Vera
+
+--- Grupo: joaquin godoy ibanez ---
+ - Joaquín Godoy Ibañez
+ - Joaquín Godoy Ibáñez
+
+--- Grupo: joaquin lavin leon ---
+ - Joaquín Lavín Leon
+ - Joaquín Lavín León
+
+--- Grupo: joaquin palma irarrazaval ---
+ - Joaquin Palma Irarrazaval
+ - Joaquín Palma Irarrázaval
+
+--- Grupo: joaquin tuma zedan ---
+ - Joaquín Tuma Zedan 
+ - Joaquín Tuma Zedán
+
+--- Grupo: jorge pizarro soto ---
+ - Jorge Pizarro Soto
+ - Jorge Pizarro Soto 
+
+--- Grupo: jorge rathgeb schifferli ---
+ - Jorge Rathgeb Schifferli
+ - Jorge Rathgeb Schifferli 
+
+--- Grupo: jorge ulloa aguillon ---
+ - Jorge Ulloa Aguillon
+ - Jorge Ulloa Aguillón
+
+--- Grupo: jose antonio galilea vidaurre ---
+ - Jose Antonio  Galilea Vidaurre
+ - Jose Antonio Galilea Vidaurre
+
+--- Grupo: jose antonio kast rist ---
+ - Jose Antonio Kast Rist 
+ - José Antonio Kast Rist
+
+--- Grupo: jose antonio viera-gallo quesney ---
+ - Jose Antonio Viera-Gallo Quesney 
+ - José Antonio Viera-Gallo Quesney
+
+--- Grupo: jose garcia ruminot ---
+ - Jose Garcia Ruminot
+ - José García Ruminot
+
+--- Grupo: jose miguel ortiz novoa ---
+ - Jose Miguel Ortiz Novoa
+ - Jose Miguel Ortiz Novoa 
+ - José Miguel Ortiz Novoa
+
+--- Grupo: jose perez arriagada ---
+ - Jose Perez Arriagada
+ - Jose Perez Arriagada 
+ - José Perez Arriagada
+ - José Pérez Arriagada
+
+--- Grupo: juan antonio coloma alamos ---
+ - Juan Antonio Coloma Alamos
+ - Juan Antonio Coloma Álamos
+
+--- Grupo: juan antonio coloma correa ---
+ - Juan Antonio  Coloma Correa
+ - Juan Antonio Coloma Correa
+
+--- Grupo: juan bustos ramirez ---
+ - Juan Bustos Ramirez
+ - Juan Bustos Ramirez 
+ - Juan Bustos Ramírez
+
+--- Grupo: juan luis castro gonzalez ---
+ - Juan Luis Castro Gonzalez
+ - Juan Luis Castro González
+
+--- Grupo: laura soto gonzalez ---
+ - Laura Soto Gonzalez
+ - Laura Soto González
+
+--- Grupo: manuel matta aragay ---
+ - Manuel Matta Aragay
+ - Manuel Matta Aragay 
+
+--- Grupo: manuel rojas molina ---
+ - Manuel Rojas Molina
+ - Manuel Rojas Molina 
+
+--- Grupo: marcela sabat fernandez ---
+ - Marcela Sabat Fernandez
+ - Marcela Sabat Fernández
+
+--- Grupo: marcelo schilling rodriguez ---
+ - Marcelo Schilling Rodriguez
+ - Marcelo Schilling Rodríguez
+
+--- Grupo: marco antonio nunez lozano ---
+ - Marco Antonio Nuñez Lozano
+ - Marco Antonio Núñez Lozano
+
+--- Grupo: maria angelica cristi marfil ---
+ - Maria Angelica Cristi Marfil
+ - Maria Angélica Cristi Marfil
+ - María Angélica Cristi Marfil
+
+--- Grupo: maria antonieta saa diaz ---
+ - Maria Antonieta Saa Diaz 
+ - Maria Antonieta Saa Díaz
+ - María Antonieta Saa Díaz
+
+--- Grupo: mario venegas cardenas ---
+ - Mario Venegas Cardenas
+ - Mario Venegas Cárdenas
+
+--- Grupo: nicolas monckeberg diaz ---
+ - Nicolas Monckeberg Diaz
+ - Nicolás Monckeberg Diaz
+ - Nicolás Monckeberg Díaz
+
+--- Grupo: nino baltolu rasera ---
+ - Nino Baltolu Rasera
+ - Nino Baltolú Rasera
+
+--- Grupo: pablo prieto lorca ---
+ - Pablo Prieto Lorca
+ - Pablo Prieto Lorca 
+
+--- Grupo: patricio melero abaroa ---
+ - Patricio Melero Abaroa
+ - Patricio Melero Abaroa 
+
+--- Grupo: patricio vallespin lopez ---
+ - Patricio Vallespin López
+ - Patricio Vallespín Lopez
+ - Patricio Vallespín López
+
+--- Grupo: patricio walker prieto ---
+ - Patricio Walker Prieto
+ - Patricio Walker Prieto 
+
+--- Grupo: paulina nunez urrutia ---
+ - Paulina Nuñez Urrutia
+ - Paulina Núñez Urrutia
+
+--- Grupo: pedro araya guerrero ---
+ - Pedro Araya Guerrero
+ - Pedro Araya Guerrero 
+
+--- Grupo: pedro munoz aburto ---
+ - Pedro Muñoz Aburto
+ - Pedro Muñoz Aburto 
+
+--- Grupo: pedro pablo alvarez-salamanca buchi ---
+ - Pedro Pablo Alvarez-Salamanca Buchi
+ - Pedro Pablo Alvarez-Salamanca Buchi 
+ - Pedro Pablo Álvarez-Salamanca Buchi
+
+--- Grupo: pedro pablo alvarez-salamanca ramirez ---
+ - Pedro Pablo Alvarez-Salamanca Ramirez 
+ - Pedro Pablo Álvarez-Salamanca Ramírez
+ - Pedro Pablo Álvarez-Salamanca Ramírez 
+
+--- Grupo: ramon elizalde hevia ---
+ - Ramon Elizalde Hevia
+ - Ramón Elizalde Hevia
+
+--- Grupo: ramon farias ponce ---
+ - Ramón Farias Ponce
+ - Ramón Farías Ponce
+
+--- Grupo: raul saldivar auger ---
+ - Raúl Saldivar Auger
+ - Raúl Saldívar Auger
+
+--- Grupo: raul urrutia avila ---
+ - Raul Urrutia Avila 
+ - Raúl Urrutia Avila
+
+--- Grupo: rene alinco bustos ---
+ - Rene Alinco Bustos
+ - René Alinco Bustos
+
+--- Grupo: rene manuel garcia garcia ---
+ - Rene Manuel Garcia Garcia
+ - Rene Manuel García García
+ - René Manuel García Garcia
+ - René Manuel García Garcia 
+ - René Manuel García García
+
+--- Grupo: renzo trisotti martinez ---
+ - Renzo Trisotti Martinez 
+ - Renzo Trisotti Martínez 
+
+--- Grupo: ricardo rincon gonzalez ---
+ - Ricardo Rincon Gonzalez
+ - Ricardo Rincón Gonzalez
+ - Ricardo Rincón González
+
+--- Grupo: roberto leon ramirez ---
+ - Roberto Leon Ramirez
+ - Roberto Leon Ramirez 
+ - Roberto León Ramirez
+ - Roberto León Ramírez
+
+--- Grupo: rodrigo gonzalez torres ---
+ - Rodrigo Gonzalez Torres 
+ - Rodrigo González Torres
+
+--- Grupo: rosauro martinez labbe ---
+ - Rosauro Martinez Labbe
+ - Rosauro Martínez Labbe
+ - Rosauro Martínez Labbé
+
+--- Grupo: sergio aguilo melo ---
+ - Sergio Aguilo Melo
+ - Sergio Aguiló Melo
+
+--- Grupo: sergio correa de la cerda ---
+ - Sergio Correa De La Cerda
+ - Sergio Correa De La Cerda 
+
+--- Grupo: victor manuel rebolledo gonzalez ---
+ - Victor Manuel Rebolledo Gonzalez
+ - Victor Manuel Rebolledo González
+
+--- Grupo: victor perez varela ---
+ - Victor Perez Varela
+ - Victor Pérez Varela
+
+--- Grupo: waldo mora longa ---
+ - Waldo Mora Longa
+ - Waldo Mora Longa 
+
+--- Grupo: ximena vidal lazaro ---
+ - Ximena Vidal Lazaro
+ - Ximena Vidal Lázaro

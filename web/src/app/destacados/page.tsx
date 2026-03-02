@@ -7,7 +7,6 @@ import {
   formatDateHuman,
   mapStageNumeric,
   mapStageLabel,
-  categorizeCommission,
   SUCCESS_PATTERN,
 } from "@/lib/legislative"
 import { getCoauthorsForBoletines } from "@/lib/queries"
@@ -119,7 +118,7 @@ function FeaturedCard({
   index: number
 }) {
   const progressVal = mapStageNumeric(mocion.etapa_del_proyecto, mocion.estado_del_proyecto_de_ley)
-  const tema = categorizeCommission(mocion.comision_inicial)
+  const tema = mocion.tematica_asociada || "Otras"
   const tags = parseTags(mocion.tags_temas)
   const isLey = SUCCESS_PATTERN.test(mocion.estado_del_proyecto_de_ley || "")
 
@@ -324,7 +323,7 @@ function DestacadosContent() {
         <div className="bg-[#141414] border border-white/10 rounded-lg p-4 text-center">
           <p className="text-white/30 text-xs uppercase tracking-wider mb-1">Temáticas</p>
           <p className="font-serif text-2xl font-bold">
-            {new Set(featured.map(m => categorizeCommission(m.comision_inicial))).size}
+            {new Set(featured.map(m => m.tematica_asociada || "Otras")).size}
           </p>
           <p className="text-white/40 text-xs">áreas distintas</p>
         </div>

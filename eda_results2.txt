@@ -1,0 +1,29 @@
+====== EXPLORATORIO DATA ANALYSIS (EDA) PART 2 ======
+
+--- 2. LONGITUD DE TEXTO ORIGINAL VS ÉXITO ---
+Promedios de Longitud de TEXTO ORIGINAL según Éxito:
+                               char_length
+categoria_exito                           
+Archivado/Rechazado (Fracaso)   5044.96063
+En Tramitación/Otro             5916.06250
+
+--- 4. ESTADOS EXISTENTES ---
+       estado_del_proyecto_de_ley                                      etapa_normalizada
+0           Tramitación terminada                                        Sin información
+1   Primer trámite constitucional                                            1er Informe
+2  Segundo trámite constitucional                                            1er Informe
+3                       Archivado                                        Sin información
+4   Primer trámite constitucional                                      Discusión general
+5  Segundo trámite constitucional                                      Discusión general
+6   Tercer trámite constitucional  Oficio aprobación de modificaciones a Cámara Revisora
+
+Top 5 Proyectos Convertidos en Ley Más Rápidos:
+    n_boletin  dias_tramitacion estado_del_proyecto_de_ley                                                                                                                                                                                              nombre_iniciativa
+6     3064-06              30.0      Tramitación terminada                                         Modifica el artículo 62 del Decreto Ley N° 1 de 2002, estableciendo una regulación en el caso de subrogación de las mujeres alcaldes en el periodo de pre y post natal
+203  10080-06             141.0      Tramitación terminada  Modifica la ley N° 19.995 que establece las Bases Generales para la Autorización, Funcionamiento y Fiscalización de los Casinos de Juegos, permitiendo la realización de bingos y rifas para fines benéficos.
+26    3821-04             142.0      Tramitación terminada                                                                                                           Autoriza erigir monumento en memoria del Padre Demetrio Bravo Santibáñez, en la ciudad de Melipilla.
+212  10253-24             186.0      Tramitación terminada                                                                                                                        Autoriza erigir un monumento en memoria de la folclorista señora Margot Loyola Palacios
+23    3719-04             379.0      Tramitación terminada                                                                                                          Autoriza erigir monumento y santuario en memoria del Padre Pío de Petrelcina, en la región del Maule.
+
+Tiempo Promedio de proyectos exitosos: 1249.69 días
+Cantidad de proyectos convertidos en ley: 13

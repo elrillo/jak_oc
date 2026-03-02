@@ -1,0 +1,94 @@
+=== VERIFICACION DE NORMALIZACION ===
+
+PARTIDOS NORMALIZADOS:
+ - Amarillos por Chile
+ - Comunes
+ - Convergencia Social
+ - Evolución Política
+ - Federación Regionalista Verde Social
+ - Independiente
+ - Independiente (Centro Unido)
+ - Independiente (Ciudadanos)
+ - Independiente (Comunes)
+ - Independiente (CS)
+ - Independiente (DC)
+ - Independiente (Evopoli)
+ - Independiente (ILA)
+ - Independiente (ILB)
+ - Independiente (ILC)
+ - Independiente (ILD)
+ - Independiente (ILE)
+ - Independiente (PDC)
+ - Independiente (PH)
+ - Independiente (PL)
+ - Independiente (PPD)
+ - Independiente (PR)
+ - Independiente (PS)
+ - Independiente (RD)
+ - Independiente (Republicano)
+ - Independiente (RN)
+ - Independiente (UDI)
+ - PAIS
+ - Partido Accion Humanista
+ - Partido Acción Regionalista de Chile
+ - Partido Comunista
+ - Partido de la Gente
+ - Partido Del Sur
+ - Partido Demócrata Cristiano
+ - Partido Ecologista Verde
+ - Partido Humanista
+ - Partido Liberal
+ - Partido Por la Democracia
+ - Partido Radical
+ - Partido Regionalista Independiente
+ - Partido Republicano
+ - Partido Social Cristiano
+ - Partido Socialista
+ - Renovación Nacional
+ - Revolución Democrática
+ - Unión de Centro Centro
+ - Unión Demócrata Independiente
+
+[ OK ] Partidos clave homologados correctamente.
+
+REGIONES NORMALIZADAS:
+ - Antofagasta
+ - Araucanía
+ - Arica y Parinacota
+ - Atacama
+ - Aysén
+ - Aysén del General Carlos Ibáñez del Campo
+ - Biobío
+ - Coquimbo
+ - Los Lagos
+ - Los Ríos
+ - Magallanes
+ - Magallanes y de la Antártica Chilena
+ - Maule
+ - Metropolitana
+ - Ñuble
+ - O'Higgins
+ - Santiago
+ - Tarapacá
+ - Valparaíso
+
+[ OK ] Regiones sin paréntesis.
+
+DISTRIBUCIÓN DE TEMÁTICAS ASOCIADAS:
+ - Constitución y Justicia: 76
+ - Economía y Hacienda: 33
+ - Vivienda e Infraestructura: 27
+ - Educación, Cultura y Deporte: 26
+ - Gobierno Interior: 22
+ - Salud: 22
+ - Familia y Social: 21
+ - Seguridad y Defensa: 12
+ - Medio Ambiente y Recursos: 7
+ - Otras: 5
+ - DD.HH. y Nacionalidad: 4
+
+PRUEBA NOMBRES NORMALIZADOS (Albora / Kast):
+ - Adriana Muñoz D'Albora
+ - Felipe Kast Sommerhoff
+ - José Antonio Kast Rist
+ - Pablo Kast Sommerhoff

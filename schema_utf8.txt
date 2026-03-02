@@ -1,0 +1,56 @@
+--- Schema for mociones ---
+- n_boletin (text)
+- legislatura (integer)
+- fecha_de_ingreso (text)
+- nombre_iniciativa (text)
+- iniciativa (text)
+- camara_de_origen (text)
+- estado_del_proyecto_de_ley (text)
+- etapa (text)
+- tipo_de_proyecto (text)
+- refundido (integer)
+- comision_inicial (text)
+- tematica (text)
+- urgencia_inicial (text)
+- n_mensaje_de_ingreso_de__urgencia (text)
+- fecha_urgencia_inicial (text)
+- fecha_de_promulgacion (text)
+- publicado_en_diario_oficial (text)
+- nley (text)
+- etapa_normalizada (text)
+- tematica_normalizada (text)
+- tematica_asociada (text)
+
+--- Schema for dim_diputados ---
+- diputado (text)
+- sexo (text)
+- partido_politico (text)
+- bancada_comite (text)
+- coalicion (text)
+- region (text)
+- distrito (text)
+- periodo (text)
+- diputado_normalizado (text)
+- partido_politico_normalizado (text)
+- region_normalizada (text)
+- coalicion_normalizada (text)
+- bancada_comite_normalizado (text)
+
+--- Schema for coautores ---
+- n_boletin (text)
+- diputado (text)
+- diputado_normalizado (text)
+
+--- Schema for textos_pdf ---
+- n_boletin (text)
+- texto_mocion (text)
+- resumen_ia (text)
+
+--- Schema for analisis_ia ---
+- id_boletin (text)
+- resumen_ejecutivo (text)
+- tipo_iniciativa (character varying)
+- sentimiento_score (double precision)
+- tags_temas (jsonb)
+- updated_at (timestamp with time zone)
+

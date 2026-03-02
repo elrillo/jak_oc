@@ -8,6 +8,7 @@ export interface Mocion {
   comision_inicial: string | null
   publicado_en_diario_oficial: string | null
   etapa_del_proyecto: string | null
+  tematica_asociada: string | null
   // Campos calculados en el frontend
   anio?: number
   periodo?: string

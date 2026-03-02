@@ -1,0 +1,12 @@
+UPDATE coautores SET diputado_normalizado = 'Maximiano Errazuriz Eguiguren' WHERE diputado_normalizado = 'Maximiano Errázuriz Eguiguren';
+UPDATE coautores SET diputado_normalizado = 'Germán Verdugo Soto' WHERE diputado_normalizado = 'German Verdugo Soto';
+UPDATE coautores SET diputado_normalizado = 'Dario Molina Sanhueza' WHERE diputado_normalizado = 'Darío Molina Sanhueza';
+UPDATE coautores SET diputado_normalizado = 'Rosa Gonzalez Roman' WHERE diputado_normalizado = 'Rosa González Román';
+UPDATE coautores SET diputado_normalizado = 'Maria Eugenia Mella Gajardo' WHERE diputado_normalizado = 'María Eugenia Mella Gajardo';
+UPDATE coautores SET diputado_normalizado = 'Renan Fuentealba Vildosola' WHERE diputado_normalizado = 'Renán Fuentealba Vildósola';
+UPDATE coautores SET diputado_normalizado = 'Cristián Campos Jara' WHERE diputado_normalizado = 'Cristian Campos Jara';
+UPDATE coautores SET diputado_normalizado = 'Patricio Cornejo Vidaurrazaga' WHERE diputado_normalizado = 'Patricio Cornejo Vidaurrázaga';
+UPDATE coautores SET diputado_normalizado = 'Rodrigo Alvarez Zenteno' WHERE diputado_normalizado = 'Rodrigo Álvarez Zenteno';
+UPDATE coautores SET diputado_normalizado = 'Cristian Leay Moran' WHERE diputado_normalizado = 'Cristián Leay Morán';
+UPDATE coautores SET diputado_normalizado = 'Ramon Perez Opazo' WHERE diputado_normalizado = 'Ramón Pérez Opazo';
+UPDATE coautores SET diputado_normalizado = 'Romilio Gutiérrez Pino' WHERE diputado_normalizado = 'Romilio Gutierrez Pino';

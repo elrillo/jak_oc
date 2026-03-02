@@ -1,0 +1,113 @@
+====== EDA POR SECCIONES ======
+
+--- 1. GENERAL ---
+Total Proyectos: 255
+
+--- 2. PERIODOS ---
+    legislatura  cantidad_proyectos
+0           346                   2
+1           347                   9
+2           348                   6
+3           350                   4
+4           351                   5
+5           352                   8
+6           353                   4
+7           354                  35
+8           355                  19
+9           356                  19
+10          357                   6
+11          358                  20
+12          359                  16
+13          360                  16
+14          361                   6
+15          362                  24
+16          363                  41
+17          364                  12
+18          365                   3
+
+--- 3. DESTACADOS ---
+Proyectos con mayor cantidad de firmas:
+  n_boletin                                                                                                                                                                                                       nombre_iniciativa  total_firmas
+0   7620-07  Establece sanciones para aquellos que menoscaben o destruyan el inmobiliario en sectores declarados Patrimonio de la Humanidad, mediante el uso de rayados, grafitis y cualquier otra expresión escrita no autorizada.            10
+1  10151-06         Modifica la ley N° 20.500 sobre asociaciones y participación ciudadana en la gestión pública, para exigir publicación de los estados financieros y contables actualizados de las personas jurídicas que regula.            10
+2   8723-04                                                           Modifica la Ley General de Educación, incorporando dentro de las mallas curriculares de los establecimientos educacionales la asignatura de educación cívica.            10
+
+--- 4. COMISIONES ---
+Top Comisiones/Temáticas:
+               tematica_normalizada                                                                                comision_inicial  cantidad
+0                      Constitución                                                            Constitución, Legislación y Justicia        57
+1                             Salud                                                                                           Salud        22
+2  Transportes y Telecomunicaciones                                                Obras Públicas, Transportes y Telecomunicaciones        17
+3       Economía, Fomento y Turismo                                                                  Economía, Fomento y Desarrollo        15
+4       Economía, Fomento y Turismo  Economía, Fomento; Micro, Pequeña y Mediana Empresa, Protección de los Consumidores y Turismo.        14
+5                          Interior                                    Gobierno Interior, Nacionalidad Ciudadanía y Regionalización        13
+6       Desarrollo Social y Familia                                                                                         Familia        12
+7            Reforma Constitucional                                                            Constitución, Legislación y Justicia         9
+8                         Educación                                                       Educación, Cultura, Deportes y Recreación         9
+9                      Constitución                                                Constitución, Legislación, Justicia y Reglamento         9
+
+--- 5. ALIANZAS ---
+Firmas por Coalición:
+                          coalicion_normalizada  firmas
+0                                       Alianza    2837
+1                                   Chile Vamos    1629
+2                       Coalición por el Cambio    1119
+3                             Chile Podemos Mas     373
+4   Concertacion de Partidos  por la Democracia     286
+5                               Unión por Chile     210
+6                              Ex Nueva Mayoria      97
+7                                          None      61
+8                                 Nueva Mayoría      54
+9                                 Sin coalición      35
+10               Unión por el Progreso de Chile      26
+11                        Democracia y Progreso      15
+12                                Frente Amplio       6
+13                           Nuevo Pacto Social       3
+
+--- 6. ESTADO ---
+Distribución de Estados:
+       estado_del_proyecto_de_ley  cantidad
+0                       Archivado       127
+1   Primer trámite constitucional        97
+2           Tramitación terminada        19
+3  Segundo trámite constitucional        11
+4   Tercer trámite constitucional         1
+
+--- 7. LEYES ---
+Leyes Promulgadas (Temáticas):
+tematica_normalizada
+Educación                                         4
+Interior                                          2
+Transportes y Telecomunicaciones                  2
+Vivienda y Urbanismo                              2
+Justicia y Derechos Humanos                       2
+Congreso Nacional                                 1
+Ciencia, Tecnología, Conocimiento e Innovación    1
+Hacienda                                          1
+Culturas, las Artes y el Patrimonio               1
+Energia                                           1
+Salud                                             1
+Constitución                                      1
+
+Detalle Leyes:
+              nley                            tematica_normalizada
+0   Resolución S/N                               Congreso Nacional
+1      Ley N°19852                                        Interior
+2      Ley N°20149                Transportes y Telecomunicaciones
+3      Ley N°20082                                       Educación
+4      Ley N°20055                                       Educación
+5      Ley N°20795                Transportes y Telecomunicaciones
+6      Ley N°20112                            Vivienda y Urbanismo
+7      Ley N°20453  Ciencia, Tecnología, Conocimiento e Innovación
+8      Ley N°20290                     Justicia y Derechos Humanos
+9      Ley N°21032                                       Educación
+10     Ley N°21014                            Vivienda y Urbanismo
+11     Ley N°20429                     Justicia y Derechos Humanos
+12     Ley N°20400                                        Hacienda
+13     Ley N°20567                                       Educación
+14    Ley Nº20.851                                        Interior
+15     Ley N°20926             Culturas, las Artes y el Patrimonio
+16     Ley N°21076                                         Energia
+17     Ley N°20029                                           Salud
+18     Ley N°19948                                    Constitución
+

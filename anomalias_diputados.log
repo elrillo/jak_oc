@@ -1,0 +1,26 @@
+=== REPORTE DE ANOMALIAS Y MAPEOS DE DIPUTADOS ===
+
+Total únicos en coautores:     159
+Match exacto validos (Ok):     146
+Match difuso único resuelto:   0
+Ambigüedades (Varios Match):   0
+Sin Match Posible (Huérfanos): 13
+
+--- AMBIGUOS (Requieren decisión humana) ---
+
+--- HUÉRFANOS (Sin coincidencia en dim_diputados) ---
+Original: 'Gabriel Sandoval Plaza'
+Original: 'Maximiano Errázuriz Eguiguren'
+Original: 'German Verdugo Soto'
+Original: 'Darío Molina Sanhueza'
+Original: 'Rosa González Román'
+Original: 'María Eugenia Mella Gajardo'
+Original: 'Renán Fuentealba Vildósola'
+Original: 'Cristian Campos Jara'
+Original: 'Patricio Cornejo Vidaurrázaga'
+Original: 'Rodrigo Álvarez Zenteno'
+Original: 'Cristián Leay Morán'
+Original: 'Ramón Pérez Opazo'
+Original: 'Romilio Gutierrez Pino'
+
+--- MUESTRA MATCH DIFUSO RESOLUBLE (Se arreglarán automáticamente) ---

@@ -1,0 +1,14 @@
+Found Matches by ignoring accents:
+Orphan: 'Gabriel Sandoval Plaza' -> NO MATCH EVEN WITHOUT ACCENTS
+Orphan: 'Maximiano Errázuriz Eguiguren' -> Matches: 'Maximiano Errazuriz Eguiguren'
+Orphan: 'German Verdugo Soto' -> Matches: 'Germán Verdugo Soto'
+Orphan: 'Darío Molina Sanhueza' -> Matches: 'Dario Molina Sanhueza'
+Orphan: 'Rosa González Román' -> Matches: 'Rosa Gonzalez Roman'
+Orphan: 'María Eugenia Mella Gajardo' -> Matches: 'Maria Eugenia Mella Gajardo'
+Orphan: 'Renán Fuentealba Vildósola' -> Matches: 'Renan Fuentealba Vildosola'
+Orphan: 'Cristian Campos Jara' -> Matches: 'Cristián Campos Jara'
+Orphan: 'Patricio Cornejo Vidaurrázaga' -> Matches: 'Patricio Cornejo Vidaurrazaga'
+Orphan: 'Rodrigo Álvarez Zenteno' -> Matches: 'Rodrigo Alvarez Zenteno'
+Orphan: 'Cristián Leay Morán' -> Matches: 'Cristian Leay Moran'
+Orphan: 'Ramón Pérez Opazo' -> Matches: 'Ramon Perez Opazo'
+Orphan: 'Romilio Gutierrez Pino' -> Matches: 'Romilio Gutiérrez Pino'

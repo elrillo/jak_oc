@@ -1,0 +1,222 @@
+{
+    "top_coautores": [
+        {
+            "diputado_normalizado": "Felipe Ward Edwards",
+            "total_leyes": 102
+        },
+        {
+            "diputado_normalizado": "Javier Hernández Hernández",
+            "total_leyes": 82
+        },
+        {
+            "diputado_normalizado": "Patricio Melero Abaroa",
+            "total_leyes": 76
+        },
+        {
+            "diputado_normalizado": "María José Hoffmann Opazo",
+            "total_leyes": 64
+        },
+        {
+            "diputado_normalizado": "Claudia Nogueira Fernández",
+            "total_leyes": 63
+        },
+        {
+            "diputado_normalizado": "Gustavo Hasbún Selume",
+            "total_leyes": 60
+        },
+        {
+            "diputado_normalizado": "Celso Morales Muñoz",
+            "total_leyes": 56
+        },
+        {
+            "diputado_normalizado": "Iván Norambuena Farías",
+            "total_leyes": 55
+        },
+        {
+            "diputado_normalizado": "Ignacio Urrutia Bonilla",
+            "total_leyes": 50
+        },
+        {
+            "diputado_normalizado": "Javier Macaya Danús",
+            "total_leyes": 49
+        }
+    ],
+    "partidos_vinculados": [
+        {
+            "partido": "Unión Demócrata Independiente",
+            "total_firmas": 1792
+        },
+        {
+            "partido": "Renovación Nacional",
+            "total_firmas": 102
+        },
+        {
+            "partido": "Partido Demócrata Cristiano",
+            "total_firmas": 58
+        },
+        {
+            "partido": "Partido Por la Democracia",
+            "total_firmas": 39
+        },
+        {
+            "partido": "Independiente (ILC)",
+            "total_firmas": 27
+        },
+        {
+            "partido": "Partido Socialista",
+            "total_firmas": 26
+        },
+        {
+            "partido": "Independiente (ILB)",
+            "total_firmas": 18
+        },
+        {
+            "partido": "Unión de Centro Centro",
+            "total_firmas": 6
+        },
+        {
+            "partido": "Partido Acción Regionalista de Chile",
+            "total_firmas": 6
+        },
+        {
+            "partido": "Independiente",
+            "total_firmas": 5
+        },
+        {
+            "partido": "Partido Radical",
+            "total_firmas": 5
+        },
+        {
+            "partido": "Partido Comunista",
+            "total_firmas": 2
+        },
+        {
+            "partido": "Federación Regionalista Verde Social",
+            "total_firmas": 2
+        },
+        {
+            "partido": "Independiente (RN)",
+            "total_firmas": 1
+        }
+    ],
+    "coaliciones": [
+        {
+            "coalicion": "Alianza",
+            "total_firmas": 1070
+        },
+        {
+            "coalicion": "Coalición por el Cambio",
+            "total_firmas": 434
+        },
+        {
+            "coalicion": "Chile Vamos",
+            "total_firmas": 386
+        },
+        {
+            "coalicion": "Concertacion de Partidos  por la Democracia",
+            "total_firmas": 94
+        },
+        {
+            "coalicion": "Chile Podemos Mas",
+            "total_firmas": 36
+        },
+        {
+            "coalicion": "Ex Nueva Mayoria",
+            "total_firmas": 28
+        },
+        {
+            "coalicion": "Nueva Mayoría",
+            "total_firmas": 16
+        },
+        {
+            "coalicion": "Independiente/Otras",
+            "total_firmas": 12
+        },
+        {
+            "coalicion": "Sin coalición",
+            "total_firmas": 5
+        },
+        {
+            "coalicion": "Unión por el Progreso de Chile",
+            "total_firmas": 5
+        },
+        {
+            "coalicion": "Frente Amplio",
+            "total_firmas": 2
+        },
+        {
+            "coalicion": "Nuevo Pacto Social",
+            "total_firmas": 1
+        }
+    ],
+    "sexo": [
+        {
+            "sexo": "Hombre",
+            "total_firmas": 1751
+        },
+        {
+            "sexo": "Mujer",
+            "total_firmas": 338
+        }
+    ],
+    "tematicas_mociones": [
+        {
+            "tematica_asociada": "Constitución y Justicia",
+            "cantidad": 77
+        },
+        {
+            "tematica_asociada": "Economía y Hacienda",
+            "cantidad": 33
+        },
+        {
+            "tematica_asociada": "Educación, Ciencia, Cultura y Deporte",
+            "cantidad": 30
+        },
+        {
+            "tematica_asociada": "Vivienda e Infraestructura",
+            "cantidad": 27
+        },
+        {
+            "tematica_asociada": "Salud",
+            "cantidad": 22
+        },
+        {
+            "tematica_asociada": "Gobierno Interior",
+            "cantidad": 22
+        },
+        {
+            "tematica_asociada": "Desarrollo Social y Familia",
+            "cantidad": 21
+        },
+        {
+            "tematica_asociada": "Seguridad y Defensa Nacional",
+            "cantidad": 12
+        },
+        {
+            "tematica_asociada": "Medio Ambiente y Recursos Naturales",
+            "cantidad": 7
+        },
+        {
+            "tematica_asociada": "Ciudadanía y DD.HH.",
+            "cantidad": 4
+        }
+    ],
+    "periodos": [
+        {
+            "periodo_legislativo": "2002 - 2006",
+            "cantidad": 38
+        },
+        {
+            "periodo_legislativo": "2006 - 2010",
+            "cantidad": 79
+        },
+        {
+            "periodo_legislativo": "2010 - 2014",
+            "cantidad": 58
+        },
+        {
+            "periodo_legislativo": "2014 - 2018",
+            "cantidad": 80
+        }
+    ]
+}

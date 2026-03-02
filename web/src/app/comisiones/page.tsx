@@ -5,7 +5,7 @@ import { useDashboard, DashboardGate } from "@/components/DashboardProvider"
 import { KpiCard } from "@/components/KpiCard"
 import { PageHeader } from "@/components/PageHeader"
 import { StorySection } from "@/components/StorySection"
-import { categorizeCommission, valueCounts, SUCCESS_PATTERN } from "@/lib/legislative"
+import { valueCounts, SUCCESS_PATTERN } from "@/lib/legislative"
 import { Treemap, ResponsiveContainer, Tooltip } from "recharts"
 
 const COLORS = ["#c0392b", "#2ecc71", "#3498db", "#f39c12", "#9b59b6", "#1abc9c", "#e67e22", "#95a5a6", "#e74c3c", "#16a085", "#2980b9", "#d35400"]
@@ -16,7 +16,7 @@ function ComisionesContent() {
 
   const themeCounts = useMemo(() => {
     if (!data) return []
-    return valueCounts(data.jakMociones.map(m => categorizeCommission(m.comision_inicial)))
+    return valueCounts(data.jakMociones.map(m => m.tematica_asociada || "Otras"))
   }, [data])
 
   const treemapData = useMemo(() =>
@@ -28,7 +28,7 @@ function ComisionesContent() {
 
   const activeTema = selectedTema || themeCounts[0]?.name || null
   const filtered = activeTema
-    ? data.jakMociones.filter(m => categorizeCommission(m.comision_inicial) === activeTema)
+    ? data.jakMociones.filter(m => (m.tematica_asociada || "Otras") === activeTema)
     : []
   const tTotal = filtered.length
   const tLeyes = filtered.filter(m => SUCCESS_PATTERN.test(m.estado_del_proyecto_de_ley)).length

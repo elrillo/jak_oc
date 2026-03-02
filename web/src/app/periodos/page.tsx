@@ -5,7 +5,7 @@ import { useDashboard, DashboardGate } from "@/components/DashboardProvider"
 import { KpiCard } from "@/components/KpiCard"
 import { PageHeader } from "@/components/PageHeader"
 import { StorySection } from "@/components/StorySection"
-import { PERIODOS, SUCCESS_PATTERN, categorizeCommission, valueCounts } from "@/lib/legislative"
+import { PERIODOS, SUCCESS_PATTERN, valueCounts } from "@/lib/legislative"
 import {
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
@@ -30,7 +30,7 @@ function PeriodosContent() {
   )
 
   const themeCounts = valueCounts(
-    filtered.map(m => categorizeCommission(m.comision_inicial))
+    filtered.map(m => m.tematica_asociada || "Otras")
   )
   const treemapData = themeCounts.map((t, i) => ({
     name: t.name,

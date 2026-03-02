@@ -1,0 +1,50 @@
+====== EXPLORATORIO DATA ANALYSIS (EDA) ======
+
+--- 1. PATRONES DE COAUTORÍA ---
+Top 10 Círculo de Hierro:
+         diputado_normalizado   partido_politico_normalizado    coalicion_normalizada  total_firmas
+0      Patricio Melero Abaroa  Unión Demócrata Independiente              Chile Vamos           456
+1         Felipe Ward Edwards  Unión Demócrata Independiente                  Alianza           306
+2     Ignacio Urrutia Bonilla  Unión Demócrata Independiente  Coalición por el Cambio           250
+3  Javier Hernández Hernández  Unión Demócrata Independiente              Chile Vamos           246
+4   María José Hoffmann Opazo  Unión Demócrata Independiente              Chile Vamos           192
+5  Claudia Nogueira Fernández  Unión Demócrata Independiente                  Alianza           189
+6        Ramón Barros Montero  Unión Demócrata Independiente              Chile Vamos           184
+7         Celso Morales Muñoz  Unión Demócrata Independiente              Chile Vamos           168
+8         Iván Moreira Barros  Unión Demócrata Independiente                  Alianza           165
+9      Iván Norambuena Farías  Unión Demócrata Independiente                  Alianza           165
+
+Top 10 Firmas Inesperadas (Oposición / Independientes / Centro-Izquierda):
+         diputado_normalizado partido_politico_normalizado coalicion_normalizada  total_firmas
+88     Alberto Robles Pantoja              Partido Radical         Nueva Mayoría            12
+108        Ramón Farías Ponce    Partido Por la Democracia         Nueva Mayoría             8
+121      Víctor Torres Jeldes  Partido Demócrata Cristiano         Nueva Mayoría             6
+125         Marcelo Díaz Díaz                Independiente         Frente Amplio             6
+137    Cristina Girardi Lavín    Partido Por la Democracia         Nueva Mayoría             6
+160     Denise Pascal Allende           Partido Socialista         Nueva Mayoría             3
+162     Aldo Cornejo González  Partido Demócrata Cristiano         Nueva Mayoría             3
+165       Gabriel Silber Romo  Partido Demócrata Cristiano         Nueva Mayoría             3
+168     Hugo Gutiérrez Gálvez            Partido Comunista         Nueva Mayoría             3
+171  Patricio Vallespín López  Partido Demócrata Cristiano         Nueva Mayoría             2
+
+--- 2. LONGITUD DE RESÚMENES VS ÉXITO ---
+Promedios de Longitud de Resumen IA según Éxito:
+                     char_length  word_count
+categoria_exito                             
+Archivado (Fracaso)   912.314961       150.0
+En Tramitación        924.375000       150.0
+
+--- 3. FOCO TERRITORIAL ---
+Menciones a regiones en títulos de proyectos:
+- Atacama: 2 proyectos (Ej: ['7359-24', '7360-24'])
+- Metropolitana: 1 proyectos (Ej: ['8350-12'])
+- Santiago: 1 proyectos (Ej: ['8350-12'])
+- Maule: 1 proyectos (Ej: ['3719-04'])
+
+--- 4. VELOCIDAD DE TRAMITACIÓN ---
+Top 5 Proyectos Convertidos en Ley Más Rápidos:
+Empty DataFrame
+Columns: [n_boletin, dias_tramitacion, nombre_iniciativa]
+Index: []
+
+Tiempo Promedio de proyectos exitosos: nan días

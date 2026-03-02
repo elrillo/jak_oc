@@ -1,0 +1,5 @@
+=== REPORTE DE COBERTURA DE DOCUMENTOS PDF ===
+Total de mociones en la base: 255
+Total de mociones con archivo descargado: 255
+Cobertura real (Cruce): 255 encontrados de 255.
+Faltan por respaldar/automatizar desde la BCN: 0

@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Alejandro García-Huidobro Sanfuentes",
+        "missing_period": "2010 - 2014",
+        "count": 6,
+        "exists_in_other_periods": [
+            "1994 - 1998",
+            "1998 - 2002",
+            "2002 - 2006",
+            "2006 - 2010"
+        ]
+    },
+    {
+        "name": "Carlos Recondo Lavanderos",
+        "missing_period": "2010 - 2014",
+        "count": 12,
+        "exists_in_other_periods": [
+            "1990 - 1994",
+            "1998 - 2002",
+            "2002 - 2006",
+            "2006 - 2010"
+        ]
+    },
+    {
+        "name": "Carolina Tohá Morales",
+        "missing_period": "2006 - 2010",
+        "count": 1,
+        "exists_in_other_periods": [
+            "2006 - 2009",
+            "2002 - 2006"
+        ]
+    },
+    {
+        "name": "Eduardo Díaz Del Río",
+        "missing_period": "2002 - 2006",
+        "count": 6,
+        "exists_in_other_periods": [
+            "2006 - 2010",
+            "1998 - 2002"
+        ]
+    },
+    {
+        "name": "Gonzalo Uriarte Herrera",
+        "missing_period": "2010 - 2014",
+        "count": 5,
+        "exists_in_other_periods": [
+            "2006 - 2010",
+            "2002 - 2006",
+            "2010 - 2011"
+        ]
+    },
+    {
+        "name": "Jorge Sabag Villalobos",
+        "missing_period": "2010 - 2014",
+        "count": 2,
+        "exists_in_other_periods": [
+            "2014 - 2018",
+            "2006 - 2010",
+            "2018 - 2022"
+        ]
+    },
+    {
+        "name": "Juan Bustos Ramírez",
+        "missing_period": "2006 - 2010",
+        "count": 1,
+        "exists_in_other_periods": [
+            "2002 - 2006",
+            "2006 - 2008",
+            "1998 - 2002"
+        ]
+    },
+    {
+        "name": "Juan Lobos Krause",
+        "missing_period": "2010 - 2014",
+        "count": 4,
+        "exists_in_other_periods": [
+            "2006 - 2010",
+            "2010 - 2011"
+        ]
+    },
+    {
+        "name": "Marcela Hernando Pérez",
+        "missing_period": "2014 - 2018",
+        "count": 1,
+        "exists_in_other_periods": [
+            "2018 - 2022"
+        ]
+    },
+    {
+        "name": "Marta Eliana Isasi Barbieri",
+        "missing_period": "2010 - 2014",
+        "count": 1,
+        "exists_in_other_periods": [
+            "2006 - 2010"
+        ]
+    },
+    {
+        "name": "Ramon Perez Opazo",
+        "missing_period": "2002 - 2006",
+        "count": 4,
+        "exists_in_other_periods": [
+            "1990 - 1994",
+            "1994 - 1998",
+            "2002 - 2005"
+        ]
+    },
+    {
+        "name": "Ramón Barros Montero",
+        "missing_period": "2002 - 2006",
+        "count": 11,
+        "exists_in_other_periods": [
+            "2006 - 2010",
+            "2010 - 2014",
+            "2014 - 2018",
+            "2018 - 2022"
+        ]
+    }
+]

@@ -14,39 +14,7 @@ export const TARGET_VARIANTS = [
 /** Patrón regex para detectar mociones aprobadas como ley */
 export const SUCCESS_PATTERN = /ley|publicado|tramitación terminada/i
 
-/**
- * Clasifica una comisión en una de las 12 categorías temáticas.
- * Portada de categorize_commission() en app.py línea 392.
- */
-export function categorizeCommission(cName: string | null): string {
-  if (!cName) return "Otras"
-  const n = cName.toLowerCase()
 
-  if (n.includes("constituc") || n.includes("legislaci") || n.includes("justicia"))
-    return "Constitución y Justicia"
-  if (n.includes("econom") || n.includes("hacienda") || n.includes("presupuesto"))
-    return "Economía y Hacienda"
-  if (n.includes("seguridad") || n.includes("defensa") || n.includes("inteligencia"))
-    return "Seguridad y Defensa"
-  if (n.includes("familia") || n.includes("mujer") || n.includes("adulto mayor") || n.includes("desarrollo"))
-    return "Familia y Social"
-  if (n.includes("educaci") || n.includes("cultura") || n.includes("deportes"))
-    return "Educación y Cultura"
-  if (n.includes("salud"))
-    return "Salud"
-  if (n.includes("trabajo") || n.includes("previsión"))
-    return "Trabajo y Previsión"
-  if (n.includes("ambiente") || n.includes("recursos") || n.includes("pesca") || n.includes("agricultura") || n.includes("minería"))
-    return "Medio Ambiente y Recursos"
-  if (n.includes("vivienda") || n.includes("obras") || n.includes("transporte") || n.includes("telecomunicaciones"))
-    return "Vivienda e Infraestructura"
-  if (n.includes("derechos humanos") || n.includes("nacionalidad"))
-    return "DD.HH. y Nacionalidad"
-  if (n.includes("gobierno") || n.includes("interior") || n.includes("regional"))
-    return "Gobierno Interior"
-
-  return "Otras"
-}
 
 /**
  * Convierte el estado/etapa a un valor numérico de progreso (0-4).
