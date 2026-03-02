@@ -8,7 +8,7 @@ import unicodedata
 
 # Configuración de conexión Supabase
 # Se usa directamente el string proporcionado por el usuario (Transaction Pooler)
-DB_URL = "postgresql://postgres.tbniuckpxxzphturwnaj:KgjE5iLuevSXBHWU@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
+DB_URL = os.getenv("DATABASE_URL")  # Set in .env — never hardcode credentials
 
 INPUT_DB = "database/jak_observatorio.db"
 
