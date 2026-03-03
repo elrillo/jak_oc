@@ -5,11 +5,11 @@ import os
 import psycopg2
 
 # Configuración de Supabase
-SUPABASE_URL = os.getenv("SUPABASE_URL", "https://tbniuckpxxzphturwnaj.supabase.co")
+SUPABASE_URL = os.getenv("SUPABASE_URL")  # Set in .env
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRibml1Y2tweHh6cGh0dXJ3bmFqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDUzNDUwMSwiZXhwIjoyMDgwMTEwNTAxfQ.q0Q6cxsOxOTYrVblVC1YMqMqKtKdMWVWSMXXIJR0x2A"
 
 # Conexión Directa para crear tabla (DDL)
-DB_URL = "postgresql://postgres.tbniuckpxxzphturwnaj:KgjE5iLuevSXBHWU@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
+DB_URL = os.getenv("DATABASE_URL")  # Set in .env
 
 try:
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
