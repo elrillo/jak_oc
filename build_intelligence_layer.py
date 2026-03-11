@@ -1,4 +1,5 @@
 
+import os
 import psycopg2
 from psycopg2 import sql
 import pandas as pd
@@ -7,7 +8,7 @@ import re
 import unicodedata
 
 # Connection string
-DB_URL = "postgresql://postgres.tbniuckpxxzphturwnaj:KgjE5iLuevSXBHWU@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
+DB_URL = os.getenv("DATABASE_URL")
 
 # --- NLP HEURISTICS ---
 

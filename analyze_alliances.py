@@ -1,10 +1,11 @@
 
+import os
 import psycopg2
 import pandas as pd
 import json
 
-# Connection string (from user's previous files)
-DB_URL = "postgresql://postgres.tbniuckpxxzphturwnaj:KgjE5iLuevSXBHWU@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
+# Connection string
+DB_URL = os.getenv("DATABASE_URL")
 
 def analyze_alliances():
     try:
