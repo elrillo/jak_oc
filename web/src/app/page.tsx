@@ -1,14 +1,18 @@
 "use client"
 
+import { useMemo } from "react"
 import { useDashboard, DashboardGate } from "@/components/DashboardProvider"
 import { KpiCard } from "@/components/KpiCard"
 import { PageHeader } from "@/components/PageHeader"
 import { StorySection } from "@/components/StorySection"
+import { Heatmap } from "@/components/charts/Heatmap"
+import { DeputyRadar } from "@/components/charts/DeputyRadar"
 import { valueCounts } from "@/lib/legislative"
 import {
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
 } from "recharts"
+import { CHART_TOOLTIP_STYLE } from "@/components/ChartContainer"
 
 const COLORS = ["#c0392b", "#2ecc71", "#3498db", "#f39c12", "#9b59b6", "#1abc9c", "#e67e22", "#95a5a6"]
 
@@ -32,6 +36,17 @@ function GeneralContent() {
   const yearCounts = valueCounts(
     jakMociones.map(m => String(m.anio || "")).filter(s => s !== "")
   ).sort((a, b) => Number(a.name) - Number(b.name))
+
+  // Radar: perfil temático
+  const radarData = useMemo(() => {
+    const themes = valueCounts(
+      jakMociones.map(m => m.tematica_asociada || "Otras")
+    )
+    return themes.map(t => ({
+      category: t.name,
+      value: Math.round((t.count / total) * 100),
+    }))
+  }, [jakMociones, total])
 
   return (
     <>
@@ -71,10 +86,7 @@ function GeneralContent() {
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip
-                contentStyle={{ backgroundColor: "#1a1a1a", border: "1px solid #333", borderRadius: 8, fontSize: 13 }}
-                itemStyle={{ color: "#fff" }}
-              />
+              <Tooltip {...CHART_TOOLTIP_STYLE} />
             </PieChart>
           </ResponsiveContainer>
         }
@@ -96,10 +108,7 @@ function GeneralContent() {
                 tick={{ fill: "#b0b0b0", fontSize: 11 }}
                 width={200}
               />
-              <Tooltip
-                contentStyle={{ backgroundColor: "#1a1a1a", border: "1px solid #333", borderRadius: 8, fontSize: 13 }}
-                itemStyle={{ color: "#fff" }}
-              />
+              <Tooltip {...CHART_TOOLTIP_STYLE} />
               <Bar dataKey="count" name="Proyectos" fill="#c0392b" radius={[0, 4, 4, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -117,15 +126,32 @@ function GeneralContent() {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
               <XAxis dataKey="name" tick={{ fill: "#b0b0b0", fontSize: 12 }} />
               <YAxis tick={{ fill: "#b0b0b0", fontSize: 12 }} />
-              <Tooltip
-                contentStyle={{ backgroundColor: "#1a1a1a", border: "1px solid #333", borderRadius: 8, fontSize: 13 }}
-                itemStyle={{ color: "#fff" }}
-              />
+              <Tooltip {...CHART_TOOLTIP_STYLE} />
               <Bar dataKey="count" name="Proyectos" fill="#555" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         }
         textLeft
+      />
+
+      <div className="border-t border-white/5 my-8" />
+
+      {/* NUEVA Sección 4: Heatmap de actividad */}
+      <StorySection
+        title="Mapa de Actividad"
+        description="Este mapa de calor revela los patrones estacionales de la actividad legislativa. Cada celda representa la cantidad de mociones ingresadas en un mes y año específico.\n\nLos meses con mayor intensidad de color indican períodos de alta productividad parlamentaria."
+        chart={<Heatmap dates={jakMociones.map(m => m.fecha_de_ingreso)} />}
+        variant="full-width"
+      />
+
+      <div className="border-t border-white/5 my-8" />
+
+      {/* NUEVA Sección 5: Radar temático */}
+      <StorySection
+        title="Huella Legislativa"
+        description="El perfil temático muestra la distribución porcentual de las mociones en cada área. Este radar revela las prioridades legislativas predominantes.\n\nUn área más extendida indica una mayor concentración de proyectos en esa temática."
+        chart={<DeputyRadar data={radarData} />}
+        textLeft={false}
       />
     </>
   )
