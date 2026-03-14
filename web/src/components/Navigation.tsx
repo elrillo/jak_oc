@@ -17,6 +17,7 @@ import {
   Clock,
   GitBranch,
   Users,
+  BookOpen,
 } from "lucide-react"
 import {
   Sheet,
@@ -50,6 +51,7 @@ const NAV_GROUPS = [
     label: "Herramientas",
     items: [
       { href: "/timeline", label: "Timeline", icon: Clock },
+      { href: "/visor", label: "Visor", icon: BookOpen },
       { href: "/explorador", label: "Explorador", icon: Search },
     ],
   },
